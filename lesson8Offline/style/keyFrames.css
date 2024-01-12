@@ -1,0 +1,48 @@
+.animation {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    animation-name: squareAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-direction:normal;
+}
+
+/* @keyframes squareAnimation {
+    from {
+        background-color: yellowgreen;
+    }
+    to {
+        background-color: yellow;
+    }
+} */
+
+@keyframes squareAnimation {
+    0% {
+        background-color: yellowgreen;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: rgb(5, 180, 92);
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color:rgb(197, 38, 38);
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: rgb(85, 159, 214);
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: rgb(205, 161, 50);
+        top: 0px;
+        left: 0px;
+    }
+}
