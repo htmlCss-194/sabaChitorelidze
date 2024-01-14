@@ -146,3 +146,166 @@ header a:hover {
     letter-spacing: 0.5px;
     font-family: Arial;
 }
+
+
+table {
+    width: 300px;
+    height: 50px;
+}
+
+table tr th {
+    border: 2px solid rgb(152, 163, 185);
+    color: #e0d4d4;
+    font-family: arial;
+    text-align: center;
+    padding: 5px;
+}
+
+table tr th:hover {
+    background-color: #77d2cf;
+    text-shadow: 2px 3px 4px rgb(199, 55, 55);
+}
+
+table tr td {
+    border: 2px solid rgb(174, 158, 158);
+    color: #e0d4d4;
+    text-align: center;
+    padding: 10px;
+}
+
+table tr td:hover {
+    background-color: #7cbda1;
+    text-shadow: 2px 3px 4px rgb(93, 124, 32);
+}
+
+.mainTable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin-top: 100px;
+}
+
+#logoStyle {
+    width: 40px;
+    border-radius: 60%;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+hr {
+   color: #e0d4d4;
+}
+
+.mainHeaderText {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#footerHeaderTextStyle {
+    color: #e0d4d4;
+    font-family: Arial;   
+}
+
+.line {
+    background-color: #e0d4d4;
+    width: 80px;
+    height: 2px;
+    margin-top: 16px;
+}
+
+.georgianCin {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    margin-top: 15px;
+}
+
+#textDecotration {
+    color: #e0d4d4;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#textDecotration:hover {
+    text-decoration: underline;
+}
+
+.worldCin {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    margin-top: 15px;
+}
+
+.holywood {
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+    margin-top: 15px;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-top: 15px;
+}
+
+#email {
+    border-radius: 30px;
+    padding: 8px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#emailSubscribe {
+    border-radius: 30px;
+    padding: 8px;
+}
+
+#emailSubscribe:hover {
+    background-color: crimson;
+    color: #e0d4d4;
+    cursor:pointer;
+}
+
+
+.copy p {
+    color: #2b2727;
+}
+
+.lastFooterText {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px;
+    background-color: rgb(163, 196, 196);
+}
+
+#privacyText {
+    color: #2b2727;
+    text-decoration: none;
+}
+
+#privacyText:hover{
+    text-decoration: underline;
+}
+
+footer .mainHeaderText {
+    margin-left: 13px;
+    margin-right: 13px;
+} 
+
+
+
+
