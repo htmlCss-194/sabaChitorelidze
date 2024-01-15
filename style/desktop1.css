@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#151515, #3125CC)
+}
+
+.mainHeader {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+#logoStyle {
+    width: 50px;
+    padding: 20px;
+}
+
+.headerTextDiv {
+    display: flex;
+    align-items: center;
+}
+
+#headerText {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: -webkit-linear-gradient(#E056F6, #FAFE4D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 27px;
+}
+
+.headerRightText {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 450px;
+}
+
+#rightTextStyle {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    padding: 10px; 
+}
+
+#rightTextStyle:hover {
+    text-decoration: underline;
+}
+
+.mainRightText {
+    display: flex;
+    justify-content: right;
+    margin-top: -50;
+    margin-right: 100px;
+}
+
+#photoStyle {
+    width: 707px;
+    height: 591px;
+    flex-shrink: 0;
+}
+
+
+
+.Ellipse1 {
+    width: 200px;
+    margin-left:280px ;
+    position: absolute;
+}
+
+.Ellipse2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin-top: 480px;
+    position: absolute;
+}
+
+#joinTextStyle {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 25px;
+}
+
+#joinButton {
+    width: 267px;
+    padding: 20px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    color: #000000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(#FFFFFF, #6993FF);
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+
+.both {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 0px;
+    margin-right: 50px;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+
+.photoDiv {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
