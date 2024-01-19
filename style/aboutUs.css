@@ -1,0 +1,276 @@
+body {
+    background: linear-gradient(#720e9e,#98FB98);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navMenu {
+    display: flex;
+    flex-direction: row;
+}
+
+#HeaderTextStyle {
+    background: linear-gradient(#39FF14, #FFF503);
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+}
+
+#LogoStyle {
+    width: 100px;
+    margin: 25px;
+}
+
+.LogoText {
+    display: flex;
+    align-items: center;
+}
+
+#navMenuStyle {
+    color: #E1EBEE;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 9px;
+    background:linear-gradient(#FFD700, #FFFF00 );
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+
+}
+
+#navMenuStyle:hover {
+    background: linear-gradient(#39FF14, #FFF503);
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+}
+
+.headerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+main {
+    width: 100%;
+}
+
+#aboutText {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    color: #E1EBEE;
+}
+
+#textSecond {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    color: #E1EBEE;
+}
+
+.firstAnswer {
+    width: 80%;
+    margin-left: 80px;
+}
+
+.secondAnswer {
+    width: 80%;
+    margin-left: 80px;
+}
+
+.thirdAnswer {
+    width: 80%;
+    margin-left: 80px;
+}
+
+main h4 {
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+    color: #E1EBEE;
+}
+
+main p {
+    font-size: 17px;
+    font-style: italic;
+    text-align: left;
+    background:linear-gradient(#72A0C1, #B9D9EB );
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+
+
+
+
+hr {
+    color: #FFD700;
+}
+
+
+
+#loremText {
+    width: 180px;
+    text-align: center;
+    background:linear-gradient(#0000FF, #720e9e );
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#h2TextStyle {
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+#productText {
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+#useFulText {
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+#addressHeadStyle {
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+
+#aStyle {
+    font-size: 18px;
+    text-decoration: none;
+    background:linear-gradient(#0000FF, #720e9e );
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    margin: 5px;
+}
+
+#addressStyle {
+    letter-spacing: 1px;
+    width: 100px;
+    background:linear-gradient(#0000FF, #720e9e );
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    font-size: 18px;
+}
+
+#h2TextStyle :last-child {
+    background: linear-gradient(#00308F,#0000FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.loremDiv {
+}
+
+.footerNavMenu1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNavMenu2{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerTextDIv1 {
+    display: flex;
+    margin: auto;
+}
+
+.headerTextDIv2{
+    display: flex;
+    margin:auto;
+}
+
+.headerTextDIv3{
+    display: flex;
+    margin: auto;
+}
+
+.headerTextDIv4 {
+    display: flex;
+    margin: auto;
+}
+
+.fourDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.footerLog {
+    display: flex;
+    justify-content: space-around;
+    width: 23%;
+}
+
+
+
+#fbStyle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#twStyle {
+    width: 40px;
+    height: 40px;   
+    border-radius: 50%;
+}
+#youStyle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#inStyle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#fbStyle:hover {
+    width: 41px;
+    box-shadow: 2px 3px 4px #1877F2;
+    cursor: pointer;
+}
+#twStyle:hover {
+    width: 41px;
+    box-shadow: 2px 3px 4px #1da1f2;
+    cursor: pointer;
+}
+#youStyle:hover {
+    width: 41px;
+    box-shadow: 2px 3px 4px #FF0000;
+    cursor: pointer;
+}
+#inStyle:hover {
+    width: 41px;
+    box-shadow: 2px 3px 4px #004792;
+    cursor: pointer;
+}
+
+#aStyle:hover {
+    background: linear-gradient(#720e9e, #FFF503);
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+}
+
+.mainHead{
+    display: flex;
+    justify-content: space-around;
+}
