@@ -5,12 +5,13 @@
 
 body {
     background: #212121;
+    width: 100%;
 }
 
 body header {
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     background-image: url("/Images/header.jfif");
-    width: 1200;
+    width: 100%;
     height: 694px;
     flex-shrink: 0;
     margin-top: -100px;
@@ -45,6 +46,7 @@ body header {
 .navMenu {
     display: flex;
     margin-top: 105px;
+    width: 40%;
 }
 
 #menuStyle {
@@ -66,7 +68,7 @@ body header {
 .example {
     display: flex;
     justify-content: space-between; 
-    width: 1200;
+    width: 100%;
 }
 
 #CenterText {
@@ -121,4 +123,431 @@ body header {
     margin-right: 5px;
 }
 
+/*main code */
 
+
+.imgDiv {
+    position: absolute;
+}
+
+.imgBorder {
+    width: 525.977px;
+    height: 380.248px;
+    flex-shrink: 0;
+    border-radius: 24px 0px;
+    border: 2px solid #FFF;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+
+#laptopImg {
+    width: 525.977px;
+    height: 380.248px;
+    flex-shrink: 0;
+    border-radius: 24px 0px;
+}
+
+
+.borderImg {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+#aboutText {
+    color: #4C70EF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+#raulText {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#littleText {
+    color: #B0ADAD;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 470px;
+}
+
+.firstText {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(10%);
+
+}
+
+.firstMainDiv {
+    display: flex;
+    justify-content: left;
+    transform: translateY(70px);
+}
+
+#whatIdoStyle {
+    color: #4C70EF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+#speciaStyle {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.SPECIALIZING {
+}
+
+.whatSpecDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#frontStyle {
+    width: 42px;
+    height: 42px;
+}
+
+.frontDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66%;
+    padding: 15px;
+}
+
+#frontTextStyle {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 200px;
+    padding: 10px;
+}
+
+#frontTextStyle:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#uiUxStyle {
+    width: 42px;
+    height: 42px;
+}
+
+#uiUxTextStyle {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 200px;
+    padding: 10px;
+}
+
+#uiUxTextStyle:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.uiUxDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    padding: 15px;
+    padding-left: 35px;
+}
+
+
+.secondMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(150px);
+    height: 400px;
+
+}
+
+.course {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    transform: translateY(50px);
+}
+
+.firstCourse {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 206px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #292C36;
+}
+
+.secondCourse {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 206px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #292C36;
+}
+
+#firstCourseStyle {
+    color: #B0ADAD;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 75%;
+    padding: 30px;
+    padding-left: 40px;
+}
+
+#secondCourseStyle {
+    color: #B0ADAD;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 75%;
+    padding: 30px;
+    padding-left: 40px;
+}
+
+
+.portfolDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolStyle {
+    color: #4C70EF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+#projectStyle {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.mainPortfol {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    transform: translateY(150px);
+}
+
+.foodDiv {
+    background-color:#292C36;
+    height: 20%;
+}
+
+#foodImgStyle {
+    width: 380px;
+    height: 283px;
+    flex-shrink: 0;
+    border-radius: 12px 12px 0px 0px;
+}
+
+#foodText {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.foodTextDiv {
+    padding: 10px;
+}
+
+.demoDiv {
+    display: inline-flex;
+    padding: 10px 18px;
+    align-items: flex-start;
+}
+
+#demoStyle {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    background: #558FFF;
+    padding: 10px 18px;
+    border-radius: 6px;
+    outline: none;
+}
+
+#demoStyle:hover {
+    background-color: #212121;
+    cursor: pointer;
+}
+
+.cafeDiv{
+    background-color:#292C36;
+    height: 20%;
+}
+
+#cafeImgStyle {
+    width: 380px;
+    height: 283px;
+    flex-shrink: 0;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.travelDiv {
+    background-color:#292C36;
+    height: 20%;
+}
+
+#travelImgStyle {
+    width: 380px;
+    height: 283px;
+    flex-shrink: 0;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.threePHoto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+#questionStyle{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transform: translateY(50px);
+}
+
+#contactStyle {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    border-radius: 6px;
+    background: #558FFF;
+    padding: 10px;
+    outline: none;
+}
+
+#contactStyle:hover {
+    cursor: pointer;
+    background-color: #212121;
+}
+
+.contactDiv {
+    display: inline-flex;
+    align-items: flex-start;
+}
+
+.lastMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 55%;
+    height: 277px;    
+    border-radius: 12px;
+    background-color: #38476b;
+}
+
+.lastDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transform: translateY(240px);
+
+}
+
+
+#footerTextStyleOne {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 5px;
+}
+
+#footerTExtStyleTwo {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 5px;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(350px);
+    background-color: #292C36;
+    padding: 20px;
+}
