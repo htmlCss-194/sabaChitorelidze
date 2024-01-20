@@ -1,0 +1,257 @@
+body {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+#titleStyle {
+    color: #000;
+    font-family: Termina;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title {
+    width: 55%;
+}
+
+#navMenuStyle {
+    color: #000;
+    font-family: Termina;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+#navMenuStyle:hover {
+    text-decoration: underline;
+}
+
+.mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-around;
+    width:31.5%;
+}
+
+/*main code*/
+
+.mainTitDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F3F3;
+    height: 190px;
+}
+
+#mainTitStyle {
+    color: #000;
+    text-align: center;
+    font-family: Termina;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; 
+}
+
+.borderMain {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.example {
+    display: flex;
+    justify-content: center;
+}
+
+.firstText {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#firstTextStyle {
+    color: #000;
+    font-family: Termina;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.secondText {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#secondTextStyle {
+    color: #000;
+    font-family: Termina;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.thirdText {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#thirdTextStyle {
+    color: #000;
+    font-family: Termina;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fourthText {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#fourthTextStyle {
+    color: #000;
+    font-family: Termina;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fifthText {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#fifthTextStyle {
+    color: #000;
+    font-family: Termina;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.firstBut {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 10px;
+    }
+
+#firstButStyle {
+    font-family: Termina;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px 29px;
+    border-radius: 34.5px;
+    width: 450px;
+}
+
+
+#firstButStyle:hover {
+    cursor: pointer;
+    background-color: rgb(48, 45, 45);
+    color: #FFF;
+}
+
+.secondBut {
+    padding: 10px;
+}
+
+#secondButStyle {
+    font-family: Termina;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px 29px;
+    border-radius: 34.5px;
+    width: 250px;
+}
+
+#secondButStyle:hover {
+    cursor: pointer;
+    background-color: rgb(48, 45, 45);
+    color: #FFF;
+}
+
+.lastTwoBut {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#thirdButStyle {
+    font-family: Termina;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px 29px;
+    border-radius: 34.5px;
+    width: 270px;
+    outline: none;
+
+}
+
+#thirdButStyle:hover {
+    cursor: pointer;
+    background-color: rgb(48, 45, 45);
+    color: #FFF;
+}
+
+#fourthdButStyle {
+    font-family: Termina;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px 29px;
+    border-radius: 34.5px;
+    width: 250px;
+    outline: none;
+}
+
+#fourthdButStyle:hover {
+    cursor: pointer;
+    background-color: rgb(48, 45, 45);
+    color: #FFF;
+}
+
+.example2 {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+
+
+/*footer Code*/
+
+.footDiv {
+    display: flex;
+    justify-content: center;
+    width:30%;
+}
