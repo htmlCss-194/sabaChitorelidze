@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Termina;
+    src: url("/fonts/TerminaTest-Light.otf");
+}
+@font-face {
+    font-family: Terminabold;
+    src: url("/fonts/TerminaTest-Bold.otf");
+}
+
+
+body {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+#titleStyle {
+    color: #000;
+    font-family: Termina;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title {
+    width: 55%;
+}
+
+#navMenuStyle {
+    color: #000;
+    font-family: Termina;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+#navMenuStyle:hover {
+    text-decoration: underline;
+}
+
+.mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-around;
+    width:31.5%;
+}
+
+/*main code*/
+
+.mainTitDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F3F3;
+    height: 190px;
+}
+
+#mainTitStyle {
+    color: #000;
+    text-align: center;
+    font-family: Termina;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; 
+}
+
+#futureStyle {
+    font-family: Termina;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+    }
+    
+    #faintText {
+        color: #C4C4C4;
+        font-family: Termina;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+    
+    }
+
+#textStyleM {
+    font-family: Termina;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    font-family: Termina;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.mainBorder {
+    width: 45%;
+}
+
+.example {
+    display: flex;
+    justify-content: center;
+}
+
+.lastTwoBut {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+#firstButStyle {
+    width: Hug (227px);
+    height: Hug (59px);
+    padding:20px 29px 20px 29px;
+    border-radius: 34.5px;
+    color: #FFF;
+    background-color: #000000;
+}
+
+#firstButStyle:hover {
+    cursor: pointer;
+    background-color: rgb(48, 45, 45);
+    background-color: #FFF;
+    color: #000000;
+}
+
+#secondButStyle {
+    width: Hug (227px);
+    height: Hug (59px);
+    padding:20px 29px 20px 29px;
+    border-radius: 34.5px;
+}
+
+#secondButStyle:hover {
+    cursor: pointer;
+    background-color: rgb(48, 45, 45);
+    color: #FFF;
+}
+
+.example2 {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+/*footer Code*/
+
+.footDiv {
+    display: flex;
+    justify-content: center;
+    width:30%;
+}
+

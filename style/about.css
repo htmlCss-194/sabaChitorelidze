@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Termina;
+    src: url("/fonts/TerminaTest-Light.otf");
+}
+@font-face {
+    font-family: Terminabold;
+    src: url("/fonts/TerminaTest-Bold.otf");
+}
+
+
 body {
     background-color: #FFF;
     margin: 0;
@@ -86,7 +96,7 @@ body {
 #firstTextStyle {
     color: #000;
     font-family: Termina;
-    font-size: 27px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -101,7 +111,7 @@ body {
 #secondTextStyle {
     color: #000;
     font-family: Termina;
-    font-size: 27px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -116,7 +126,7 @@ body {
 #thirdTextStyle {
     color: #000;
     font-family: Termina;
-    font-size: 27px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -131,7 +141,7 @@ body {
 #fourthTextStyle {
     color: #000;
     font-family: Termina;
-    font-size: 27px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -146,7 +156,7 @@ body {
 #fifthTextStyle {
     color: #000;
     font-family: Termina;
-    font-size: 27px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
