@@ -69,12 +69,14 @@ body {
 #mainTitStyle {
     color: #000;
     text-align: center;
-    font-family: Termina;
+    font-family: Terminabold;
     font-size: 42px;
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
 }
+
+
 
 
 .textMainDiv {
@@ -96,11 +98,24 @@ body {
 }
 
 .boldTextDiv {
-    width: 55%;
+    width: 80%;
+}
+
+#boldTextStyle {
+    font-family: Terminabold;
+    font-size: 24px;
+}
+
+#mainP1TextStyle {
+    font-family: Termina;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 .mainP1Text {
-    width: 39%;
+    width: 79%;
 }
 
 

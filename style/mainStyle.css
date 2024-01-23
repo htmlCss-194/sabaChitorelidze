@@ -197,6 +197,645 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
+    font-family: Termina;
     bottom: 0px;
+    left: 100px;
     width:30%;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: #FFF;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #titleStyle {
+        color: #000;
+        font-family: Termina;
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .title {
+        width: 55%;
+    }
+    
+    #navMenuStyle {
+        color: #000;
+        font-family: Termina;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+    }
+    
+    #navMenuStyle:hover {
+        text-decoration: underline;
+    }
+    
+    .mainHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        width: 100%;
+        top: 10px;
+    }
+    
+    .navMenu {
+        display: flex;
+        justify-content: space-around;
+        width:60%;
+    }
+    
+    #mainPhoto {
+        width: 50%;
+        height: 430px;
+    }
+    
+    .mainphotoDiv {
+        display: flex;
+        justify-content: right;
+    }
+    
+    /* main Code*/
+
+    .mainDiv {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        width: 50%;
+    }
+    
+    .mainNav {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .obsverDiv {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #obsStyle {
+        font-family: Terminabold;
+        font-size: 12px;
+    }
+    
+    .PText1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #textStyle1 {
+        color: #000;
+        font-family: Termina;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        width: 90%;
+    }
+    
+    .PText2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #textStyle2 {
+        color: #000;
+        font-family: Termina;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        width: 90%;
+    }
+    
+    #imgStyle {
+        width: 8px;
+        height: 10px;
+        flex-shrink: 0;
+    }
+    
+    .nav1 {
+        display: flex;
+        align-items: center; 
+        width: 100%;
+    }
+    
+    
+    .nav2 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .nav3 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #mainNavStyle {
+        width: 196px;
+        height: 23px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: Termina;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        text-decoration-line: underline;
+        padding: 10px;
+    }
+    
+    #mainNavStyle:hover {
+        color: #5e5454;
+    }
+    
+    .mainNav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+    
+    
+    #butStyle {
+        color: #FFF;
+        font-family: Termina;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 34.5px;
+        background: #000;
+        padding: 5px 10px;
+        outline: none;
+    }
+    
+    #butStyle:hover {
+        cursor: pointer;
+        background-color: rgb(48, 45, 45);
+    }
+    
+    .butDiv {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        bottom: 35px;
+    }
+    
+    /*footer Code*/
+
+    .footDiv {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        font-family: Termina;
+        top: 450;
+        left: 0px;
+        width:50%;
+    }
+
+    #footP {
+        font-size: 4.5px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: #FFF;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #titleStyle {
+        color: #000;
+        font-family: Termina;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .title {
+        width: 65%;
+    }
+    
+    #navMenuStyle {
+        color: #000;
+        font-family: Termina;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+    }
+    
+    #navMenuStyle:hover {
+        text-decoration: underline;
+    }
+    
+    .mainHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        width: 100%;
+        top: 10px;
+    }
+    
+    .navMenu {
+        display: flex;
+        justify-content: space-around;
+        width:60%;
+    }
+    
+    #mainPhoto {
+        width: 50%;
+        height: 730px;
+    }
+    
+    .mainphotoDiv {
+        display: flex;
+        justify-content: right;
+    }
+    
+    /* main Code*/
+
+    .mainDiv {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        width: 50%;
+    }
+    
+    .mainNav {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .obsverDiv {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        top: 130px;
+    }
+
+    #obsStyle {
+        font-family: Terminabold;
+        font-size: 15px;
+    }
+    
+    .PText1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        top: 150px;
+    }
+    
+    #textStyle1 {
+        color: #000;
+        font-family: Termina;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        width: 90%;
+    }
+    
+    .PText2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        top: 150px;
+    }
+    
+    #textStyle2 {
+        color: #000;
+        font-family: Termina;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        width: 90%;
+    }
+    
+    #imgStyle {
+        width: 12px;
+        height: 15px;
+        flex-shrink: 0;
+    }
+    
+    .nav1 {
+        display: flex;
+        align-items: center; 
+        width: 100%;
+    }
+    
+    
+    .nav2 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .nav3 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #mainNavStyle {
+        width: 196px;
+        height: 23px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: Termina;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        text-decoration-line: underline;
+        padding: 10px;
+    }
+    
+    #mainNavStyle:hover {
+        color: #5e5454;
+    }
+    
+    .mainNav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        top: 200px;
+        left: 10px;
+    }
+    
+    
+    #butStyle {
+        color: #FFF;
+        font-family: Termina;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 34.5px;
+        background: #000;
+        padding: 15px 20px;
+        outline: none;
+    }
+    
+    #butStyle:hover {
+        cursor: pointer;
+        background-color: rgb(48, 45, 45);
+    }
+    
+    .butDiv {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        top: 200px;
+    }
+    
+    /*footer Code*/
+
+    .footDiv {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        font-family: Termina;
+        top: 750;
+        left: 0px;
+        width:50%;
+    }
+
+    #footP {
+        font-size: 9.5px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+   
+body {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+#titleStyle {
+    color: #000;
+    font-family: Termina;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title {
+    width: 55%;
+}
+
+#navMenuStyle {
+    color: #000;
+    font-family: Termina;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+#navMenuStyle:hover {
+    text-decoration: underline;
+}
+
+.mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    top: 34px;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-around;
+    width:31.5%;
+}
+
+#mainPhoto {
+    width: 50%;
+    height: 929px;
+}
+
+.mainphotoDiv {
+    display: flex;
+    justify-content: right;
+}
+
+/* main Code*/
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 250px;
+    width: 50%;
+}
+
+.mainNav {
+    display: flex;
+    flex-direction: column;
+}
+
+.obsverDiv {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.PText1 {
+    display: flex;
+    justify-content: right;
+    width: 55%;
+}
+
+#textStyle1 {
+    color: #000;
+    font-family: Termina;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    width: 68%;
+}
+
+.PText2 {
+    display: flex;
+    justify-content: right;
+    width: 55%;
+}
+
+#textStyle2 {
+    color: #000;
+    font-family: Termina;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    width: 68%;
+}
+
+#imgStyle {
+    width: 14px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.nav1 {
+    display: flex;
+    align-items: center; 
+}
+
+
+.nav2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav3 {
+    display: flex;
+    align-items: center;
+}
+
+#mainNavStyle {
+    width: 196px;
+    height: 23px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Termina;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    text-decoration-line: underline;
+    padding: 10px;
+}
+
+#mainNavStyle:hover {
+    color: #5e5454;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58.5%;
+    
+}
+
+#butStyle {
+    color: #FFF;
+    font-family: Termina;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 34.5px;
+    background: #000;
+    padding: 20px 29px;
+    outline: none;
+}
+
+#butStyle:hover {
+    cursor: pointer;
+    background-color: rgb(48, 45, 45);
+}
+
+.butDiv {
+    display: flex;
+    justify-content: center;
+    width: 46%;
+}
+
+/*footer Code*/
+
+.footDiv {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-family: Termina;
+    bottom: 0px;
+    left: 100px;
+    width:30%;
+}
 }
