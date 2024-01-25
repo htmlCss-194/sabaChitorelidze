@@ -271,7 +271,7 @@ body {
 }
 
 #DoctorManStyle {
-    width: 206.81px;
+    width: 226.81px;
     height: 290.18px;
     border-radius: 16.03px;
 }
@@ -540,9 +540,95 @@ body {
 /* doctor an mediacaments magazine */ 
 
 .threeImgMag {
+    display: flex;
+    justify-content: space-around;
     position: absolute;
-    bottom: -2100px;
-    left: 100px;
+    width: 150px;
+    margin-top: 320px;
+    margin-left: 45px;
+}
+
+#miniImages {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+
+.heartDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    background-color: #FFFFFF;
+    border-radius: 44.786px;
+}
+
+.magazineDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    background-color: #FFFFFF;
+    border-radius: 44.786px;
+}
+
+.eyeDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    background-color: #FFFFFF;
+    border-radius: 44.786px;
+}
+
+.threeImgMag2 {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 150px;
+    margin-top: 320px;
+    margin-left: 45px;
+}
+
+.heartDiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    background-color: #FFFFFF;
+    border-radius: 44.786px;
+}
+
+.magazineDiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    background-color: #FFFFFF;
+    border-radius: 44.786px;
+}
+
+.eyeDiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    background-color: #FFFFFF;
+    border-radius: 44.786px;
 }
 
 .sale {
@@ -552,16 +638,19 @@ body {
     padding: 0px 10px 0px 10px;
     border-radius: 3px;
     background-color: #E74040;
+    color: #FFFFFF;
+    margin-left: 30px;
+    margin-top: 23px;
 }
 
 #docManStyle {
-    width: 209px;
-    height: 378px;
+    width: 249px;
+    height: 415px;
 }
 
 #medicamentStyle {
-    width: 209px;
-    height: 378px;
+    width: 249px;
+    height: 415px;
 }
 
 #futureStyle {
@@ -595,10 +684,21 @@ body {
     width: 242px;
 }
 
+.star {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    color: #FFFFFF;
+    background-color:#2D4059;
+    border-radius: 20px;
+}
+
+
+
 .guzDiv1 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     width: 175px;
     height: 24px;
     padding: 10px;
@@ -606,7 +706,7 @@ body {
 .guzDiv2 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     width: 175px;
     height: 24px;
     padding: 10px;
@@ -615,20 +715,23 @@ body {
 .priceDiv1 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     width: 230px;
+    padding: 10px;
 }
 .priceDiv2 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    padding: 10px;
     width: 230px;
 }
 
 .threeminiLogo {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    padding: 10px;
     width:375px;
 }
 
@@ -707,21 +810,20 @@ body {
 #greenArrowMagazine {
     width: 9.14px;
     height: 16px;
-
 }
 
 .LearnMoreMagazineDiv1 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 210px;
+    justify-content: left;
+    width: 230px;
     padding: 10px;
 }
 .LearnMoreMagazineDiv2 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 210px;
+    justify-content: left;
+    width: 230px;
     padding: 10px;
 }
 
@@ -730,7 +832,7 @@ body {
     height: 26px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px;
 }
 .futureDiv2 {
@@ -738,7 +840,7 @@ body {
     height: 26px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px;
 }
 
@@ -747,7 +849,7 @@ body {
     height: 26px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding: 10px;
 }
 .appointDiv2 {
@@ -755,7 +857,7 @@ body {
     height: 26px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding: 10px;
 }
 
@@ -764,7 +866,7 @@ body {
     height: 66px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding: 10px;
 }
 .focusDiv2 {
@@ -772,7 +874,7 @@ body {
     height: 66px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding: 10px;
 }
 
@@ -787,17 +889,1514 @@ body {
 
 .doctorMagazinMenu {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     width: 70%;
 }
 
 .doctorMedicamentDiv {
     display: flex;
     justify-content: center;
+    margin-left: 180px;
 }
 
-/* .oneBigdocMedDiv {
+/*pink Div */ 
+
+.pinkDiv {
     display: flex;
-    background-color: #E74040;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    background-color:#FFF2F3 ;
+    margin-top: 250px;
+    padding-bottom: 200PX;
+}
+
+#AdviceStyle {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    color: #96BB7C;
+}
+
+#ReferenceStyle {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 125% */
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+#NewtonianStyle {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.NewtonianDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 425px;
+}
+
+
+
+.firstMan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 501px;
+    background-color:#FFFFFF ;
+    padding: 25px 25px 0px 25px;
+    margin-top: 100px;
+}
+
+.secondMan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 501px;
+    background-color:#FFFFFF ;
+    padding: 25px 25px 0px 25px;
+    margin-top: 100px;
+}
+
+#firstManStyle {
+    width: 128px;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+.paragText {
+    width: 159px;
+    height: 120px;
+}
+
+#paragTextStyle {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.starDiv {
+    display: flex;
+    margin-top: 30px;
+}
+
+#fullName {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+#desStyle {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.twoManStar {
+    display: flex;
+    align-items: flex-start;
     justify-content: space-around;
-} */
+    width: 60%;
+}
+
+
+/* subscireb */ 
+
+.emailSubscrib {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 250px;
+    padding-bottom: 200PX;
+}
+
+#subJoin {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 125% */
+    letter-spacing: 0.2px;
+}
+
+#Newsletter {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    color: #96BB7C;
+}
+
+.subscribeBut {
+    display: flex;
+    margin-top: 100px;
+}
+
+#emailStyle {
+    display: flex;
+    width: 688px;
+    height: 58px;
+    padding: 15px 591px 15px 20px;
+    align-items: center;
+    background-color: #F9F9F9;
+    border-style: none;
+    outline: none;
+    font-size: 14px;
+    font-family: Montserratbold;
+}
+
+#SubscribeStyle {
+    display: flex;
+    width: 117px;
+    height: 58px;
+    padding: 15px 22.5px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #96BB7C;
+    color: #FFFFFF;
+    font-family: Montserratbold;
+    font-size: 14px;
+    border-style: none;
+    cursor: pointer;
+}
+
+#emailStyle::placeholder {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 200% */
+    letter-spacing: 0.2px;
+    color: #737373;
+    width: 100px;
+}
+
+
+/* Footer */
+
+
+.navMenuFooterDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.navMenuDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+
+#navMenuFooter:hover {
+    text-decoration: underline;
+}
+
+#navMenuFooter {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    color: #737373;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+#ochStyle {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    color: #737373;
+    padding-left: 10px;
+}
+
+.firstPhone {
+    display: flex;
+    align-items: center;
+}
+
+.secondMap {
+    display: flex;
+    align-items: center;
+}
+
+.thirdSend {
+    display: flex;
+    align-items: center;
+}
+
+.lastFooter {
+    background-color: #FAFAFA;
+}
+
+#lastPara {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.soc {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.soc:hover {
+    cursor: pointer;
+}
+
+.flexDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 767px) {
+    body {
+        margin: 0px;
+        padding: 0px; 
+        width: 100%;
+    }
+    
+  
+
+    .example {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .example2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFAB71;
+        width: 80%;
+    }
+
+    .example3 {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        background-color: aqua;
+    }
+
+    /* .firstFigur {
+        display: flex;
+        width: 100px;
+        height: 200px;
+        background-color: #f6e3f8;
+    } */
+    
+    /* .secondFigur {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height:710px;
+        background-color: #ebf8e3;
+    } */
+    
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        background-color: yellow;
+    }
+
+    #titleStyle {
+        font-family: Montserratbold;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0.10000000149011612px;
+        color: #252B42;
+    }
+    
+    .navMenu {
+        display: flex;
+        justify-content: space-around;
+        width: 150px;
+        margin-left: 100px;
+        background-color: azure; 
+    }
+
+    #navMenuStyle {
+        font-family: Montserratlight;
+        font-size: 8px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        color: #737373;
+        text-decoration: none;
+    }
+    
+    #navMenuStyle:hover {
+        text-decoration: underline;
+    }
+    
+    .butDiv {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #E74040;
+        /* background-color: blueviolet; */
+    }
+    
+
+    
+    #loginStyle {
+        font-family: Montserratlight;
+        font-size: 8px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: right;
+        color: #96BB7C;
+        background: transparent;
+        outline: none;
+        border-style: none;
+        cursor: pointer;
+    }
+    
+    #joinUsStyle {
+        font-family: Montserratlight;
+        padding: 17px 27px 17px 27px;
+        color: #FFFFFF;
+        border-radius: 5px;
+        background-color: #96BB7C;
+        border-style: none;
+        cursor: pointer;
+    }
+    
+    .arrowDiv {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    /* main Code */ 
+
+    
+.twoBigDiv {
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-620px);
+}
+
+.firsrtDivText {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(160px);
+    margin-top: 150px;
+}
+
+/*between text style */
+
+#welcomeText {
+    font-family: Montserratbold;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: #96BB7C;
+}
+
+#betweenText {
+    font-family: Montserratbold;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #252B42;
+}
+
+.betweenTextDiv {
+    width: 80%;
+}
+
+#thirdText {
+    font-family: Montserratbold;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #737373;
+}
+
+.thirdTextDiv {
+    width: 70%;
+}
+
+#secondJoinbut {
+    width: 132px;
+    height: 52px;
+    background-color: #96BB7C;
+    color: #FFFFFF;
+    padding: 15px 40px 15px 40px;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+#learnBut {
+    width: 162px;
+    height: 52px;
+    border-radius: 5px;
+    border: 1px solid #96BB7C;
+    padding: 15px 40px 15px 40px;
+    color: #96BB7C;
+    cursor: pointer;
+}
+
+.twoButton {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+/* woman style */ 
+
+#womanStyle {
+    width: 188.22px;
+    height:433px;
+}
+
+.womanDiv {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 230px;
+    margin-top: 200px;
+    margin-left: 1000px;
+}
+
+/* figures */ 
+
+.orangeFig {
+    position: relative;
+    right: -440px;
+    bottom: -316.5px;
+}
+
+.whiteFig {
+    transform: translateX(10px);
+    margin-top: 280px;
+    height: 12%;
+}
+
+.staticFigu {
+    transform: translateX(275px);
+    margin-top: 200px;
+    width: 10%;
+    height: 10%;
+}
+
+#staticFiguStyle {
+    width: 210px;
+}
+
+.greenFig {
+    height: 10%;
+    transform: translateX(10px);
+    margin-top: -60px;
+    position: absolute;
+}
+
+/* three main photo and text */ 
+
+#womanStyle2 {
+    width: 412.02px;
+    height: 277.35px;
+    border-radius: 16.03px;
+}
+
+#DoctorManStyle {
+    width: 226.81px;
+    height: 290.18px;
+    border-radius: 16.03px;
+}
+
+#teethCabinStyle {
+    width: 266.13px;
+    height: 259.72px;
+    border-radius: 16.03px;
+}
+
+.twoImgDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#singles18Style {
+    position: absolute;
+    top: 500px; 
+    left: 510px;
+    width: 132.09px;
+    height: 66.62px;
+}
+
+#GlobalStatStyle {
+    position: absolute;
+    width: 222.83px;
+    height: 207.89px;
+    top: 168px;
+    left: 655px;
+}
+
+.line {
+    width: 94px;
+    height: 7px;
+    background-color: #E74040;
+}
+
+#doctorsTextStyle {
+    font-family: Montserratbold;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #252B42;
+}
+
+#problemsTextStyle {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #737373;
+}
+
+.LearnMore1 {
+    display: flex;
+    align-items: center;
+    height: 7%;
+}
+
+#LearnMore1Style {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #96BB7C;
+    text-decoration: none;
+}
+
+.arrowGreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+#greenArrowStyle {
+    width: 9px;
+    height: 16px;
+}
+
+.threeMainPhot {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.mainExmaple {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.secondexample {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+}
+
+.oneBigDiv {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-300px);
+}
+
+/* second main */ 
+
+.packageExample {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+
+.secondMainSecondDiv {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+#doctor2TextStyle {
+    font-family: Montserratbold;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #252B42;
+}
+
+#problem2TextStyle {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #737373;
+}
+
+.problem2Text {
+    width: 80%;
+}
+
+.secondMainThirdDiv {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.line1 {
+    width: 94px;
+    height: 7px;
+    background-color: #E74040;
+}
+
+.SecondLine {
+    width: 50px;
+    height: 2px;
+    background-color: #E74040;
+}
+
+.thirdLine {
+    width: 50px;
+    height: 2px;
+    background-color: #E74040;
+}
+
+#emergenyStyle {
+    font-family: Montserratbold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+}
+
+#gradualStyle {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #737373;
+}
+
+#frameStyle {
+    width: 69.75px;
+    height: 69.75px;
+}
+
+#VectorStyle {
+    width: 63px;
+    height: 69.75px;
+}
+
+.twoEmergencyDiv {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.threeDiv {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* third main*/ 
+
+
+#PainlessTextPStyle {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color:#737373;
+}
+
+#PainlessTextStyle {
+    font-family: Montserratbold;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #252B42;
+}
+
+#PracticeTextStyle {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color:#96BB7C;
+}
+
+.thirdDivText {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 53%;
+}
+
+.PainlessTextPPDiv {
+    width: 35%;
+}
+
+.practiceBigDiv {
+    display: flex;
+    justify-content: center;
+}
+
+/* doctor an mediacaments magazine */ 
+
+.threeImgMag {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 150px;
+    margin-top: 320px;
+    margin-left: 45px;
+}
+
+#miniImages {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+
+.heartDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    background-color: #FFFFFF;
+    border-radius: 44.786px;
+}
+
+.magazineDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    background-color: #FFFFFF;
+    border-radius: 44.786px;
+}
+
+.eyeDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    background-color: #FFFFFF;
+    border-radius: 44.786px;
+}
+
+.threeImgMag2 {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 150px;
+    margin-top: 320px;
+    margin-left: 45px;
+}
+
+.heartDiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    background-color: #FFFFFF;
+    border-radius: 44.786px;
+}
+
+.magazineDiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    background-color: #FFFFFF;
+    border-radius: 44.786px;
+}
+
+.eyeDiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    background-color: #FFFFFF;
+    border-radius: 44.786px;
+}
+
+.sale {
+    position: absolute;
+    width: Hug (51px);
+    height: Hug (24px);
+    padding: 0px 10px 0px 10px;
+    border-radius: 3px;
+    background-color: #E74040;
+    color: #FFFFFF;
+    margin-left: 30px;
+    margin-top: 23px;
+}
+
+#docManStyle {
+    width: 249px;
+    height: 415px;
+}
+
+#medicamentStyle {
+    width: 249px;
+    height: 415px;
+}
+
+#futureStyle {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #96BB7C;
+}
+
+#appoinmentStyle {
+    font-family: Montserratbold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: #252B42;
+}
+
+#focusStyle {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #737373;
+    width: 242px;
+}
+
+.star {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    color: #FFFFFF;
+    background-color:#2D4059;
+    border-radius: 20px;
+}
+
+
+
+.guzDiv1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 175px;
+    height: 24px;
+    padding: 10px;
+}
+.guzDiv2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 175px;
+    height: 24px;
+    padding: 10px;
+}
+
+.priceDiv1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 230px;
+    padding: 10px;
+}
+.priceDiv2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    width: 230px;
+}
+
+.threeminiLogo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+    width:375px;
+}
+
+.clockDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+}
+.waveDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+.progressDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+#miniLogo {
+    width: 16px;
+    height: 16px;
+}
+
+#miniLogoTextStyle {
+    font-family: Montserratbold;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #737373;
+}
+
+#priceStyle {
+    font-family: Montserratbold;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #737373;
+}
+
+#priceStyle :last-child {
+    color:#FFAB71
+}
+
+#salesTextStyle {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #737373;
+}
+
+#LearnMoreMagazine {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #96BB7C;
+    text-decoration: none;
+    border: 1px solid #96BB7C;
+    border-radius: 37px;
+    padding: 10px 20px 10px 20px;
+}
+
+#greenArrowMagazine {
+    width: 9.14px;
+    height: 16px;
+}
+
+.LearnMoreMagazineDiv1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 230px;
+    padding: 10px;
+}
+.LearnMoreMagazineDiv2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 230px;
+    padding: 10px;
+}
+
+.futureDiv1 {
+    width: 242px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.futureDiv2 {
+    width: 242px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.appointDiv1 {
+    width: 272px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+}
+.appointDiv2 {
+    width: 272px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+}
+
+.focusDiv1 {
+    width: 345px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+}
+.focusDiv2 {
+    width: 345px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+}
+
+
+
+.magazinMenu {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 378px;
+}
+
+.doctorMagazinMenu {
+    display: flex;
+    justify-content: left;
+    width: 70%;
+}
+
+.doctorMedicamentDiv {
+    display: flex;
+    justify-content: center;
+    margin-left: 180px;
+}
+
+/*pink Div */ 
+
+.pinkDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    background-color:#FFF2F3 ;
+    margin-top: 250px;
+    padding-bottom: 200PX;
+}
+
+#AdviceStyle {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    color: #96BB7C;
+}
+
+#ReferenceStyle {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 125% */
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+#NewtonianStyle {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.NewtonianDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 425px;
+}
+
+
+
+.firstMan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 501px;
+    background-color:#FFFFFF ;
+    padding: 25px 25px 0px 25px;
+    margin-top: 100px;
+}
+
+.secondMan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 501px;
+    background-color:#FFFFFF ;
+    padding: 25px 25px 0px 25px;
+    margin-top: 100px;
+}
+
+#firstManStyle {
+    width: 128px;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+.paragText {
+    width: 159px;
+    height: 120px;
+}
+
+#paragTextStyle {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.starDiv {
+    display: flex;
+    margin-top: 30px;
+}
+
+#fullName {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+#desStyle {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.twoManStar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 60%;
+}
+
+
+/* subscireb */ 
+
+.emailSubscrib {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 250px;
+    padding-bottom: 200PX;
+}
+
+#subJoin {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 125% */
+    letter-spacing: 0.2px;
+}
+
+#Newsletter {
+    text-align: center;
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    color: #96BB7C;
+}
+
+.subscribeBut {
+    display: flex;
+    margin-top: 100px;
+}
+
+#emailStyle {
+    display: flex;
+    width: 688px;
+    height: 58px;
+    padding: 15px 591px 15px 20px;
+    align-items: center;
+    background-color: #F9F9F9;
+    border-style: none;
+    outline: none;
+    font-size: 14px;
+    font-family: Montserratbold;
+}
+
+#SubscribeStyle {
+    display: flex;
+    width: 117px;
+    height: 58px;
+    padding: 15px 22.5px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #96BB7C;
+    color: #FFFFFF;
+    font-family: Montserratbold;
+    font-size: 14px;
+    border-style: none;
+    cursor: pointer;
+}
+
+#emailStyle::placeholder {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 200% */
+    letter-spacing: 0.2px;
+    color: #737373;
+    width: 100px;
+}
+
+
+/* Footer */
+
+
+.navMenuFooterDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.navMenuDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+
+#navMenuFooter:hover {
+    text-decoration: underline;
+}
+
+#navMenuFooter {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    color: #737373;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+#ochStyle {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    color: #737373;
+    padding-left: 10px;
+}
+
+.firstPhone {
+    display: flex;
+    align-items: center;
+}
+
+.secondMap {
+    display: flex;
+    align-items: center;
+}
+
+.thirdSend {
+    display: flex;
+    align-items: center;
+}
+
+.lastFooter {
+    background-color: #FAFAFA;
+}
+
+#lastPara {
+    font-family: Montserratbold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.soc {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.soc:hover {
+    cursor: pointer;
+}
+
+.flexDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+}
+
+
