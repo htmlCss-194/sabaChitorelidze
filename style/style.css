@@ -1,11 +1,11 @@
 @font-face {
     font-family: Montserratbold;
-    src: url("/lesson10Offline/fonts/Montserrat-Bold.ttf");
+    src: url("/fonts/Montserrat-Bold.ttf");
 }
 
 @font-face {
     font-family: Montserratlight;
-    src: url("/lesson10Offline/fonts/Montserrat-Light.ttf");
+    src: url("/fonts/Montserrat-Light.ttf");
 }
 
 body {
