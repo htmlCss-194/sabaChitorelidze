@@ -638,6 +638,18 @@ body {
     margin-top: 23px;
 }
 
+.sale2 {
+    position: absolute;
+    width: Hug (51px);
+    height: Hug (24px);
+    padding: 0px 10px 0px 10px;
+    border-radius: 3px;
+    background-color: #E74040;
+    color: #FFFFFF;
+    margin-left: 30px;
+    margin-top: 23px;
+}
+
 #docManStyle {
     width: 249px;
     height: 415px;
