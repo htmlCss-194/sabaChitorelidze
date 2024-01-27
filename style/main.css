@@ -1,0 +1,350 @@
+@font-face {
+    font-family:PT;
+    src: url("/Fonts/PTSerif-Italic.ttf")
+};
+
+@font-face {
+    font-family: PTBOLD;
+    src: url("/Fonts/PTSerif-Bold.ttf");
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    background: linear-gradient(#DEE4EA,#D7D7D7);
+}
+
+
+:root {
+    --yelow: #fcdc04;
+   }
+   
+
+.LinkSocMed {
+    grid-area: SocMedia;
+}
+
+.mainPhoto {
+   
+    grid-area: photoMain;
+}
+
+.textMain {
+    grid-area: text;
+}
+
+.mainPhoto2 {
+    grid-area: photoMain2;
+}
+
+.textMain2 {
+    grid-area: text2;
+}
+
+
+.mainPhoto3 {
+    grid-area: photoMain3;
+}
+
+.textMain4 {
+    grid-area: Text4;
+}
+
+
+.SocMed {
+    display: grid;
+    grid-template-areas: 
+    'SocMedia';
+    padding: 10px;
+}
+
+.SocMed > div {
+    position: fixed;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+.LinkSocMed {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+#socMediaStyle {
+    width: 10%;
+    cursor: pointer;
+}
+
+#socMediaStyle:active {
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px var(--yelow);
+}
+
+.textPHoto {
+    display: grid;
+    grid-template-areas:
+      'photoMain photoMain text text'
+      ;
+    gap: 10px;
+}
+
+.textPhoto > div {
+    display: flex;
+    justify-content: center;
+}
+
+#firstPhoto {
+    width: 80%;
+    height: 100%;
+    border-radius: 10%;
+    box-shadow: 13px 13px 13px  var(--yelow);
+}
+
+.textMain {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#firstText {
+    animation: lights 8s infinite ;
+    text-align: center;
+    font-family: PT;
+    font-size: 100%;
+    width: 90%;
+}
+
+#firstText::first-letter {
+    font-size: 50px;
+    color: var(--yelow);
+}
+
+#firstText::selection {
+    background-color: var(--yelow);
+}
+
+/*second Photo*/
+
+.textPhoto2 {
+    display: grid;
+    grid-template-areas:
+      'text2 text2 photoMain2 photoMain2'
+      ;
+    gap: 10px;
+}
+
+.textPhoto2 > div {
+    display: flex;
+    justify-content: center;
+}
+
+#secondPhoto {
+    width: 80%;
+    border-radius: 10%;
+    box-shadow: 13px 13px 13px  var(--yelow);
+}
+
+.textMain2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+#Text2 {
+    animation: lights 6s infinite ;
+    font-family: PT;
+    font-size: 100%;
+    width: 70%;
+}
+
+#Text2::first-letter {
+    font-size: 50px;
+    color: var(--yelow);
+}
+
+#Text2::selection {
+    background-color: var(--yelow);
+}
+
+#text3 {
+    animation: lights 6s infinite ;
+    font-family: PT;
+    font-size: 100%;
+    width: 70%
+}
+
+#Text3::selection {
+    background-color: var(--yelow);
+}
+
+
+/* third Photo */
+
+.textPhoto3 {
+    display: grid;
+    grid-template-areas:
+      'photoMain3 photoMain3 Text4 Text4'
+      ;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.textPhoto3 > div {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+#thirdPhoto {
+    width: 80%;
+    border-radius: 10%;
+    box-shadow: 13px 13px 13px  var(--yelow);
+}
+
+.textMain3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#Text4 {
+    animation: lights 8s infinite ;
+    font-family: PT;
+    font-size: 100%;
+    width: 70%;
+}
+
+#Text4::first-letter {
+    font-size: 50px;
+    color: var(--yelow);
+}
+
+#Text4::selection {
+    background-color: var(--yelow);
+}
+
+#text4 {
+    font-family: PT;
+    font-size: 100%;
+    width: 70%
+}
+
+#Text4::selection {
+    background-color: var(--yelow);
+}
+
+@keyframes lights {
+    0% {
+      color:#fcdc04; 
+      text-shadow: 2px 3px 4px #EE5A24;
+    }
+    
+    30% { 
+        color:#378B29;    
+        text-shadow: 2px 3px 4px #378B29;
+
+        
+    }
+    
+    40% { 
+       color:#802201; 
+       text-shadow: 2px 3px 4px #44B09E;
+
+       
+    }
+    
+    70% {
+        color:#000C14; 
+        text-shadow: 2px 3px 4px #E01C34; 
+    }
+    
+    100% {
+        color:#F8002F; 
+        text-shadow: 2px 3px 4px #EA2027; 
+
+    }
+    
+  }
+
+  @media only screen and (max-width: 767px)  {
+    #socMediaStyle {
+        width: 25px;
+        height: 25px;
+    }
+
+    #firstPhoto {
+        width: 200px;
+        height: 200px;
+    }
+
+    #secondPhoto {
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+    }
+
+    #firstText {
+        font-size: 10px;
+    }
+
+    .textPhoto2 {
+        display: flex;
+    }
+
+    #Text2 {
+        font-size: 10px;
+        margin-top: 30px;
+    }
+
+    #Text3 {
+        font-size: 10px;
+    }
+
+    #Text4 {
+        font-size: 10px;
+        margin-top: 70px;
+    }
+
+    #firstText::first-letter {
+        font-size: 25px;
+        color: var(--yelow);
+    }
+
+    #Text2::first-letter {
+        font-size: 25px;
+        color: var(--yelow);
+    }
+
+    #Text4::first-letter {
+        font-size: 25px;
+        color: var(--yelow);
+    }
+
+    #thirdPhoto {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+  }
+
+  
+
+
+
+  
+  
+  
+
+
+

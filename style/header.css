@@ -1,0 +1,172 @@
+@font-face {
+    font-family:PT;
+    src: url("/Fonts/PTSerif-Italic.ttf")
+};
+
+@font-face {
+    font-family: PTBOLD;
+    src: url("/Fonts/PTSerif-Bold.ttf");
+}
+
+:root {
+ --yelow: #fcdc04;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(#000000, #2D3436);
+}
+
+.betweenHeader { grid-area: navMenu; }
+.leftHeader { grid-area: logo; }
+.rightHeader { grid-area: rightHeader; }
+
+
+.header-grid {
+  display: grid;
+  grid-template-areas:
+    'logo navMenu navMenu navMenu rightHeader rightHeader';
+  padding: 10px;
+}
+
+.header-grid > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.betweenHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navMenu {
+    text-decoration: none;
+    font-family: PT;
+    font-size: 60%;
+    color: #e3e4a4;
+}
+
+#navMenu:hover{
+    box-shadow: 3px 3px 3px var(--yelow);
+    text-decoration: double;
+}
+
+#headerLogoStyle {
+    animation: rotate 5s infinite;
+    width: 150px;
+}
+
+.line {
+    background-color: #fae65e;
+    height: 2%;
+    width: 30%;
+}
+
+.leftHeader {
+    width: 70%;
+}
+
+.rightHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    
+}
+
+#rightTextStyle {
+    animation: flicker 5s infinite;
+    font-family: PTBOLD;
+    color: var(--yelow);
+    border: 2px solid;
+    padding: 10px;
+    font-size: 80%;
+}
+
+
+#rightTextStyle:hover {
+    background-color: var(--yelow);
+    color: #fff;
+    cursor: pointer;
+}
+
+#rightTextStyle:active {
+    box-shadow: 3px 3px 3px var(--yelow);
+}
+
+@keyframes rotate {
+    50% { transform: rotate(30deg); }
+}
+
+
+@keyframes flicker {
+	0% {
+		opacity: 0.5;
+		text-shadow: 2px 2px 10px #fff;
+	}
+	100% {
+		opacity: 1;
+		text-shadow: 2px 2px 20px #fff;
+	}
+
+    50% {
+        opacity: 1;
+		text-shadow: 2px 2px 20px #fff;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #headerLogoStyle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .betweenHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navMenu {
+        text-decoration: none;
+        font-family: PT;
+        font-size: 14px;
+        color: #e3e4a4;
+    }
+    
+    #navMenu:hover{
+        box-shadow: 3px 3px 3px var(--yelow);
+        text-decoration: double;
+    }
+
+    .rightHeader {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 100px;
+        
+    }
+    
+    #rightTextStyle {
+        animation: flicker 5s infinite;
+        font-family: PTBOLD;
+        color: var(--yelow);
+        border: 2px solid;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .line {
+        width: 0px;
+        height: 0px;
+    }
+}
+
