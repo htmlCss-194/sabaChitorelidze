@@ -1,0 +1,42 @@
+@font-face {
+    font-family: lightText;
+    src: url("/Fonts/OpenSans-Light.ttf");
+
+}
+@font-face {
+    font-family: mediumText;
+    src: url("/Fonts/OpenSans_SemiCondensed-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: boldText;
+    src: url("/Fonts/OpenSans-Bold.ttf");
+}
+
+.runningLine {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+    background-color: #f5f5f5 ;
+    color: var(--1st);
+    font-family: mediumText;
+    font-size: 28px;
+  }
+  
+  .runningLine_content {
+    width: 100%;
+    transform: translateX(-200%); 
+    animation: move 20s linear infinite; 
+  }
+
+  @keyframes move {
+    to { transform: translateX(200%); }
+  }
+
+  @media screen and (max-width: 600px) {
+    .runningLine {
+      font-size: 10px;
+    }
+  }
