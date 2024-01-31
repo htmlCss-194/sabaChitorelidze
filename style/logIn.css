@@ -1,0 +1,93 @@
+@font-face {
+    font-family: lightText;
+    src: url("./Fonts/OpenSans-Light.ttf");
+
+}
+@font-face {
+    font-family: mediumText;
+    src: url("/Fonts/OpenSans_SemiCondensed-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: boldText;
+    src: url("/Fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: AcadNusx;
+    src: url("/Fonts/BPG_Algeti_2018.ttf");
+}
+
+:root {
+    --1st: #212832;
+}
+
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu menu menu menu menu menu';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  margin-top: 10%;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#log {
+    border-radius: 7px;
+    width: 35%;
+    padding: 10px;
+    border: 1px solid #0093E9; 
+    outline: none;
+}
+
+#log:focus {
+    color: #000;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+#log:focus::placeholder {
+    color: #000;
+}
+
+#pass {
+    border-radius: 7px;
+    width: 35%;
+    padding: 10px;
+    border: 1px solid #0093E9; 
+    outline: none;   
+}
+
+#pass:focus {
+    color: #000;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+#pass:focus::placeholder {
+    color: #000;
+}
+
+#passRes {
+    border-style: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#passRes:hover {
+    text-decoration: underline;
+}
+
