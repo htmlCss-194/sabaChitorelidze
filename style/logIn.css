@@ -24,34 +24,35 @@
 
 
 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
+.item1 { grid-area: enter; }
+.item2 { grid-area: header; }
+.item3 { grid-area: menu; }
+.item4 { grid-area: registration;}
 
 
-.grid-container {
+.login-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'menu menu menu menu menu menu';
+    'enter enter enter enter enter enter'
+    'menu menu menu menu menu menu'
+    'registration registration registration registration registration registration';
   gap: 10px;
-  background-color: #2196F3;
   padding: 10px;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+.login-container > div {
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  padding: 20px;
 }
 
 #log {
     border-radius: 7px;
     width: 35%;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #0093E9; 
     outline: none;
+    font-family: AcadNusx;
 }
 
 #log:focus {
@@ -61,12 +62,14 @@
 
 #log:focus::placeholder {
     color: #000;
+    font-family: AcadNusx;
 }
 
 #pass {
+    font-family: AcadNusx;
     border-radius: 7px;
     width: 35%;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #0093E9; 
     outline: none;   
 }
@@ -77,6 +80,7 @@
 }
 
 #pass:focus::placeholder {
+    font-family: AcadNusx;
     color: #000;
 }
 
@@ -85,9 +89,56 @@
     outline: none;
     padding: 10px;
     cursor: pointer;
+    background-color: #fff;
 }
 
 #passRes:hover {
     text-decoration: underline;
 }
 
+#logIn {
+    width: 35%;
+}
+
+#logIn:hover {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);    
+}
+
+#registration {
+    width: 35%;
+    font-family: AcadNusx;
+    color: var(--1st);
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    padding: 10px 37px;
+    border: 1px #d7cece;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#registration:hover {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);    
+}
+
+
+.remember {
+    display: flex;
+    justify-content: left;
+    margin: inherit;
+    margin-left: 15%;
+    margin-right: 10%;
+    font-size: 15px;
+}
+
+.remember p {
+    margin-left: 8px;
+}
+
+.item2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: inherit;
+    margin-right: 25%;
+    margin-left: 17%;
+}

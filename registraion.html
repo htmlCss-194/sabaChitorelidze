@@ -35,34 +35,18 @@
     </header>
 
    <main>
-
-    <div class="login-container">
-        <div class="item1">
-            <form action="">
-                <input type="text" id="log" name="fname" placeholder="ელფოსტა | ტელეფონის ნომერი"><br><br><br>
-                <input type="password" id="pass" name="lname" placeholder="პაროლი"><br><br><br>
-
-                <div class="item2">
-                    <div class="remember">
-                    <input type="checkbox"> <p>დამახსოვრება</p>
-                    </div>
-                    <input type="submit" id="passRes" value="დაგავიწყდა პაროლი?">
-                </div>
-                <br><br>
-                <div class="item3">
-                    <input type="submit" id="logIn" value="შესვლა">
-                </div>
-                <br> <p>ან</p>
-                <br>
-              </form> 
-              <form action="./registraion.html">
-                <div class="item4">
-                    <input type="submit" id="registration" value="რეგისტრაცია">
-                </div>
-            </form>
-        </div>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+      </form>
+      <br>
+      <div>
+        <p>სქესი</p><br>
+        <input type="radio" name="gender" value="male"> მამრობითი
+        <input type="radio" name="gender" value="female"> მდედრობითი
       </div>
-
    </main>
 
     <footer>
