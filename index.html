@@ -1,30 +1,38 @@
 <html>
 <head>
     <title>GeorgianTravel</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Saba Chitorelidze">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/footer.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <h1 id="titleStyle">Georgian<span>Travel</span></h1>
-                <li><a href="#Desitnations">მთავარი</a></li>
-                <li><a href="#hotel">ტურები</a></li>
-                <li><a href="#Flights">სასტუმროები</a></li>
-                <li><a href="#Bookings">ჩვენ შესახებ</a></li>
-                <li><a href="#Login">კონტაქტი</a></li>
+        <div class="header-container">
+            <div class="header1">
+                <ul>
+                    <li><a id="navStyle" href="#Home">მთავარი</a></li>
+                    <li><a id="navStyle" href="#Tour">ტურები</a></li>
+                    <li><a id="navStyle" href="#Hotels">სასტუმროები</a></li>
+                    <li><a id="navStyle" href="#aboutUs">ჩვენ შესახებ</a></li>
+                    <li><a id="navStyle" href="#Contact">კონტაქტი</a></li> 
+                </ul>
+            </div>
+
+            <div class="header2"><h1 id="titleStyle">Georgian<span>Travel</span></h1>
+            </div>
+
+            <div class="header3"> 
                 <form action="./logIn.html">
-                    <input type="submit" value="შესვლა">
+                    <input type="submit" id="logIn" value="შესვლა">
                 </form>
                 <select name="language" id="lang">
-                    <option value="en">EN</option>
                     <option value="ge">GE</option>
-                    <option value="Rus">RUS</option>
+                    <option value="en">EN</option>
                 </select>
-            </ul>
-        </nav> 
+            </div>
+          </div>
     </header>
 
    <main>
@@ -34,12 +42,13 @@
     <footer>
         <div class="runningLine">
             <span class="runningLine_content">
-                Travel, enjoy
-                and live a new
-                and full life
+                დაგეგმე მოგზაურობა
             </span>
             <span class="runningLine_content">
-                We Offer Best Services
+                აღმოაჩინე საქართველო
+            </span>
+            <span class="runningLine_content">
+                
             </span>
         </div>
     </footer>

@@ -13,16 +13,29 @@
     src: url("/Fonts/OpenSans-Bold.ttf");
 }
 
+@font-face {
+  font-family: AcadNusx;
+  src: url("/Fonts/acadnusx.ttf");
+}
+
+@font-face {
+  font-family: AcadNusx;
+  src: url("/Fonts/BPG_Algeti_2018.ttf");
+}
+
+
+
 .runningLine {
     display: flex;
     position: fixed;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
     bottom: 0;
     width: 100%;
     padding: 25px;
     background-color: #f5f5f5 ;
     color: var(--1st);
-    font-family: mediumText;
     font-size: 28px;
+    font-family: AcadNusx;
   }
   
   .runningLine_content {
