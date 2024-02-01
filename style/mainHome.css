@@ -1,8 +1,75 @@
+@font-face {
+  font-family: lightText;
+  src: url("./Fonts/OpenSans-Light.ttf");
+
+}
+@font-face {
+  font-family: mediumText;
+  src: url("/Fonts/OpenSans_SemiCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: boldText;
+  src: url("/Fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: AcadNusx;
+  src: url("/Fonts/BPG_Algeti_2018.ttf");
+}
+
 
 
 main {
     background-image: linear-gradient( #fff1eb 0%, #eef1f5 100%);  
     height: 100%;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+
+
+.grid-container {
+  width: 100%;
+  position: absolute;
+  top: 200px;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu menu menu menu menu menu'
+  ;
+  gap: 10px;
+  padding: 10px;
+}
+
+.item1 {
+  display: flex;
+  margin: auto;
+}
+
+.item2 {
+  margin-left: inherit;
+  margin-left: 30%;
+}
+
+.nextTourText {
+  font-family: AcadNusx;
+}
+
+.nextTourSearch {
+  width: 30%;
+  padding: 10px;
+}
+
+.dateTour {
+  width: 20%;
+  padding: 10px;
+}
+
+.reservTour {
+  width: 12%;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .season-container {
@@ -15,31 +82,40 @@ main {
     margin-top: 100px;
   }
   
+  .item1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  #history1 {
+    width: 50%;
+    font-size: 30px;
+    font-family: AcadNusx;
+    text-align: center;
+    border: 2px dashed red;
+    padding: 10px;
+    border-radius: 15px;
+  }
   
 
   .seasonClass {
     display: flex;
+    position: absolute;
+    top: 100px;
     justify-content: center;
     align-items: center;
   }
 
-  .seasonStyle1 {
-    width: 80%;
-    height: 80%;
-    border-radius: 20px;
+ 
+
+  .example {
+    position: relative;
+    opacity: 0.75;
+    height: 1000px;
+    background-repeat: no-repeat;
   }
-  .seasonStyle2 {
-    width: 80%;
-    height: 80%;
-    border-radius: 20px;
-  }
-  .seasonStyle3 {
-    width: 80%;
-    height: 50%;
-    border-radius: 20px;
-  }
-  .seasonStyle4 {
-    width: 80%;
-    height: 50%;
-    border-radius: 20px;
+
+  #gergeti {
+    width: 100%;
   }
