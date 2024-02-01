@@ -250,6 +250,7 @@ option {
     border-radius: 8px;
     font-size: 20px;
     cursor: pointer;
+    width: 100%;
 }
 
 #logIn:hover {
