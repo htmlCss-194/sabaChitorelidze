@@ -1,4 +1,27 @@
+@font-face {
+  font-family: lightText;
+  src: url("./Fonts/OpenSans-Light.ttf");
 
+}
+@font-face {
+  font-family: mediumText;
+  src: url("/Fonts/OpenSans_SemiCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: boldText;
+  src: url("/Fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: AcadNusx;
+  src: url("/Fonts/BPG_Algeti_2018.ttf");
+}
+
+
+body {
+  position: relative;
+}
 
 .footer-container {
     background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
@@ -7,7 +30,6 @@
 .foot1 { grid-area: header; }
 .foot2 { grid-area: menu; }
 .foot3 { grid-area: main; }
-.foot4 { grid-area: right; }
 .foot5 { grid-area: footer;}
 
 .footer2-container {
@@ -15,24 +37,87 @@
   align-items: center;
   grid-template-areas:
     'header header header header header header'
-    'menu menu menu menu footer footer';
+    'menu main main main main footer'
+    'menu main main main main footer';
   gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+  background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
 }
 
-.footer2-container > div {
-    text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px 0;
-  font-size: 30px;
+footer {
+  margin-top: 100px;
+}
+
+.header2 {
+  text-align: center;
 }
 
 .socMediaFooter {
-    display: inline;
     align-items: center;
     width: 50px;
     height: 50px;
     cursor: pointer;
 }
 
+.foot2 {
+  display: inline;
+  width: 70%;
+}
+
+.foot5Style {
+  font-size: 12px;
+  text-align: right;  
+  margin-right: inherit;
+  margin-right: 25px;
+  margin-top: 10px;
+  color: #E1EBEE;
+  font-family: boldText;
+}
+
+.socMediaDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+}
+
+.foot3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+  padding: 20px;
+  margin-left: inherit;
+  margin-left: 13%;
+}
+
+.footerNav {
+  font-family: AcadNusx;
+  text-decoration: none;
+  font-size: 25px;
+  color: #E1EBEE;
+  padding: 5px;
+}
+
+.footerNav:hover {
+  text-decoration: underline;
+}
+
+.addressDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left:37%;
+  line-height: 40px;
+}
+
+#addressStyleH {
+  font-size: 30px;
+  color: #E1EBEE;
+  font-family: boldText;
+}
+
+#addressPStyle {
+  font-size: 15px;
+  color: #E1EBEE;
+  font-family: lightText;
+}
