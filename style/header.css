@@ -22,6 +22,12 @@
     --1st: #212832;
 }
 
+:root {
+    --2: #E1EBEE;
+}
+
+
+
 
 body {
     margin: 0px;
@@ -30,7 +36,7 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
 }
 
 
@@ -50,7 +56,98 @@ header {
   padding: 25px 20px;
   grid-template-areas:
     'menu header header header right right';
+    overflow: hidden;
 }
+
+.tour {
+    float: left;
+    overflow: hidden;
+  }
+
+  .hotel {
+    float: left;
+    overflow: hidden;
+  }
+
+  .tour .tourBt {
+    font-size: 22.612px;
+    border: none;
+    outline: none;
+    color: var(--2);
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    font-family: AcadNusx;
+  }
+
+  .hotel .hotelBt {
+    font-size: 22.612px;
+    border: none;
+    outline: none;
+    color: var(--2);
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    font-family: AcadNusx;
+  }
+
+  .tour:hover .tourBt {
+    cursor: pointer;
+  }
+
+  .hotel:hover .hotelBt {
+    cursor: pointer;
+  }
+
+  .tour-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
+  }
+
+  .hotel-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
+  }
+
+  .tour-content a {
+    float: none;
+    color: var(--2);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: AcadNusx;
+  }
+
+  .hotel-content a {
+    float: none;
+    color: var(--2);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: AcadNusx;
+  }
+
+  .tour-content a:hover {
+    color: var(--1st);
+    background-color: #ddd;
+  }
+
+  .hotel-content a:hover {
+    color: var(--1st);
+    background-color: #ddd;
+  }
+
+  .tour:hover .tour-content {
+    display: block;
+  }
+
+  .hotel:hover .hotel-content {
+    display: block;
+  }
 
 .header3 {
     display: flex;
@@ -104,6 +201,7 @@ li a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    color:var(--2);
 }
 
 #navStyle {
@@ -119,7 +217,6 @@ li a:hover {
 
 
 select {
-    color: var(--1st, #212832);
     font-family: "mediumText";
     font-size: 22.612px;
     font-style: normal;
@@ -127,7 +224,8 @@ select {
     line-height: normal;
     border-style: none;
     outline: none;
-    background-color: #d9e7ff;
+    background-color: #0C2340;
+    color: var(--2);
     cursor: pointer;
 }
 
@@ -140,6 +238,7 @@ option {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    color: var(--2);
 }
 
 #logIn {

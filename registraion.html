@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="/style/logIn.css">
+    <link rel="stylesheet" href="/style/registration.css">
 </head>
 <body>
     <header>
@@ -14,8 +15,28 @@
             <div class="header1">
                 <ul>
                     <li><a id="navStyle" href="/index.html">მთავარი</a></li>
-                    <li><a id="navStyle" href="#Tour">ტურები</a></li>
-                    <li><a id="navStyle" href="#Hotels">სასტუმროები</a></li>
+                    <div class="tour">
+                        <button class="tourBt">ტურები 
+                        </button>
+                        <div class="tour-content">
+                          <a href="#">თბილისი</a>
+                          <a href="#">რეგიონები</a>
+                          <a href="#">ჯგუფური</a>
+                          <a href="#">ინდივიდუალური</a>
+                        </div>
+                      </div> 
+                      <div class="hotel">
+                        <button class="hotelBt">სასტუმროები 
+                        </button>
+                        <div class="hotel-content">
+                          <a href="#">თბილისი</a>
+                          <a href="#">კახეთი</a>
+                          <a href="#">იმერეთი</a>
+                          <a href="#">აჭარა</a>
+                          <a href="#">სამეგრელო</a>
+                          <a href="#">სხვა რეგიონები</a>
+                        </div>
+                      </div> 
                     <li><a id="navStyle" href="#aboutUs">ჩვენ შესახებ</a></li>
                     <li><a id="navStyle" href="#Contact">კონტაქტი</a></li> 
                 </ul>
@@ -35,18 +56,36 @@
     </header>
 
    <main>
-    <form action="/action_page.php">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-      </form>
-      <br>
-      <div>
-        <p>სქესი</p><br>
-        <input type="radio" name="gender" value="male"> მამრობითი
-        <input type="radio" name="gender" value="female"> მდედრობითი
-      </div>
+    <div class="reg-container">
+        <div class="item1">
+            <form action="">
+                <label for="fname">სახელი:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">გვარი:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="phoneNumber">ტელეფონის ნომერი:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber"><br><br>
+                <label for="personalNum">პირადი ნომერი:</label>
+                <input type="text" id="personalNum" name="personalNum"><br><br>
+                <label for="email"> ელფოსტა:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">შეიყვანეთ პაროლი:</label>
+                <input type="password" name="password" id="password">
+              </form>
+              <br>
+              <div>
+                <p>სქესი</p><br>
+                <input type="radio" name="gender" value="male"> მამრობითი
+                <input type="radio" name="gender" value="female"> მდედრობითი
+              </div><br><br>
+              <form action="">
+                <label for="birthday">დაბადების თარიღი:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <button id="reg">რეგისტრაცია</button>
+              </form>
+        </div>
+    </div>
+
    </main>
 
     <footer>

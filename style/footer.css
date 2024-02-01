@@ -24,15 +24,18 @@
 }
 
 
+:root {
+  --2: #E1EBEE;
+}
+
 
 .runningLine {
     display: flex;
     position: fixed;
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
     bottom: 0;
     width: 100%;
     padding: 25px;
-    background-color: #f5f5f5 ;
     color: var(--1st);
     font-size: 28px;
     font-family: AcadNusx;
@@ -42,6 +45,7 @@
     width: 100%;
     transform: translateX(-200%); 
     animation: move 20s linear infinite; 
+    color: var(--2);
   }
 
   @keyframes move {

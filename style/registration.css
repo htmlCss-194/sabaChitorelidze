@@ -1,4 +1,100 @@
+@font-face {
+    font-family: AcadNusx;
+    src: url("/Fonts/BPG_Algeti_2018.ttf");
+}
 
 
+.item1 { grid-area: header; }
 
-form 
+
+.reg-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header';
+  gap: 10px;
+  padding: 10px;
+  font-family: AcadNusx;
+}
+
+.reg-container > div {
+  text-align: left;
+  padding: 20px;
+  font-size: 25px;
+}
+
+#fname {
+    width: 20%;
+    padding: 15px;
+    font-size: 20px;
+    outline: none;
+    border-style: none;
+    background-color:whitesmoke;
+}
+
+#lname {
+    width: 20%;
+    padding: 15px; 
+    font-size: 20px;
+    margin-left: 18px;
+    outline: none;
+    border-style: none;
+    background-color:whitesmoke;
+}
+
+#phoneNumber {
+    width: 20%;
+    padding: 15px; 
+    font-size: 20px;
+    margin-left: 18px;
+    outline: none;
+    border-style: none;
+    background-color:whitesmoke;
+} 
+
+#personalNum {
+    width: 20%;
+    padding: 15px; 
+    font-size: 20px;
+    margin-left: 18px;
+    outline: none;  
+    border-style: none;
+    background-color:whitesmoke;
+}
+
+#email {
+    width: 20%;
+    padding: 15px; 
+    font-size: 20px;
+    margin-left: 18px;
+    outline: none;  
+    border-style: none;
+    background-color:whitesmoke;
+}
+
+#password {
+    width: 20%;
+    padding: 15px; 
+    font-size: 20px;
+    margin-left: 18px;
+    outline: none; 
+    border-style: none;
+    background-color:whitesmoke;
+}
+
+#birthday {
+    width: 10%;
+    padding: 10px;
+    outline: none;
+    border-style: none;
+    background-color:whitesmoke;
+}
+
+#reg {
+    font-size: 25px;
+    padding: 10px;
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+    font-family: AcadNusx;
+}
+
