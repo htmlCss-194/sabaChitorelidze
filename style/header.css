@@ -36,7 +36,10 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
+  z-index: 100;
 }
 
 
@@ -62,11 +65,13 @@ header {
 .tour {
     float: left;
     overflow: hidden;
+    z-index: 1000;
   }
 
   .hotel {
     float: left;
     overflow: hidden;
+    z-index: 1000;
   }
 
   .tour .tourBt {
@@ -154,15 +159,6 @@ header {
     justify-content: space-between;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto);
-    gap: 10px;
-    background-color: #f5f5f5 ;
-    padding: 10px;
-  }
 
   #titleStyle {
     font-family: boldText;
@@ -174,7 +170,8 @@ nav {
 
   #titleStyle :last-child {
     display: inline-block;
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);   
+    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     position: relative;
     animation: flip 5s infinite;
@@ -296,21 +293,24 @@ option {
 
  @media screen and (max-width: 600px) {
 
-    
 
+    
       #titleStyle {
-        grid-area: title;
         font-family: boldText;
         font-size: 13px;
-        background: linear-gradient(to right, #F7B733 , #09868b,#e0474c, #600473);
+        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
       }
-    
+      
+      
       #titleStyle :last-child {
-        background: linear-gradient(to right, #51e2f5, #9df9ef,#ffa8B6, #a28089);
+        display: inline-block;
+        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);   
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+        position: relative;
+        animation: flip 5s infinite;
       }
 
       .header-container {
@@ -318,51 +318,32 @@ option {
         grid-template-areas:
           'menu menu menu menu menu right'
           'header header header header header header';
+          padding: 3%;
       }
       
-
-      ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        list-style-type: none;
-        margin-left: inherit;
-        border: none;
-    }
-    
-    li a {
-        text-decoration: none;
-        color: var(--1st);
-        font-family: "Google Sans";
-        font-size: 7.612px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-  
-
-    select {
-        color: var(--1st, #212832);
-        font-family: "Google Sans";
+      select {
+        font-family: "mediumText";
         font-size: 7.612px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
         border-style: none;
         outline: none;
-        background-color: #f5f5f5;
-        position: relative;
-        top: 0px;
-        right: 0px;
+        background-color: #0C2340;
+        color: var(--2);
+        cursor: pointer;
     }
+    
+    
     
     option {
         color: var(--1st, #212832);
-        font-family: "Google Sans";
+        font-family: "mediumText";
         font-size: 7.612px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        color: var(--2);
     }
 
 
@@ -372,9 +353,101 @@ option {
         align-items: center;
     }
 
+    .tour .tourBt {
+      font-size: 8.612px;
+      border: none;
+      outline: none;
+      color: var(--2);
+      padding: 14px 16px;
+      background-color: inherit;
+      margin: 0;
+      font-family: AcadNusx;
+    }
+  
+    .hotel .hotelBt {
+      font-size: 8.612px;
+      border: none;
+      outline: none;
+      color: var(--2);
+      padding: 14px 16px;
+      background-color: inherit;
+      margin: 0;
+      font-family: AcadNusx;
+      
+    }
+
+    .tour-content a {
+      float: none;
+      color: var(--2);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      font-family: AcadNusx;
+      font-size: 7px;
+    }
+  
+    .hotel-content a {
+      float: none;
+      color: var(--2);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      font-family: AcadNusx;
+      font-size: 7px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style-type: none;
+      margin-left: inherit;
+      margin-left: 0%;
+      margin-right: 0%;
+  }
+  
+  
+  
+  li a {
+      text-decoration: none;
+      color: var(--1st);
+      font-family: "lightText";
+      font-size: 8.612px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color:var(--2);
+  }
+  
+  #navStyle {
+      font-family: AcadNusx;
+  
+  }
+  
+  li a:hover {
+      text-decoration: underline;
+  }
+
     .header3 {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    
+    #logIn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: AcadNusx;
+      color: var(--1st);
+      background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+      padding: 5px 27px;
+      border: 1px #d7cece;
+      border-radius: 8px;
+      font-size: 8px;
+      cursor: pointer;
+      width: 60%;
+  }
 }  

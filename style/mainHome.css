@@ -18,6 +18,13 @@
   src: url("/Fonts/BPG_Algeti_2018.ttf");
 }
 
+:root {
+  --1st: #212832;
+}
+
+:root {
+  --2: #E1EBEE;
+}
 
 
 main {
@@ -32,14 +39,12 @@ main {
 .grid-container {
   width: 100%;
   position: absolute;
-  top: 200px;
+  top: 350px;
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu menu menu menu menu menu'
-  ;
+    'menu menu menu menu menu menu';
   gap: 10px;
-  padding: 10px;
 }
 
 .item1 {
@@ -54,22 +59,40 @@ main {
 
 .nextTourText {
   font-family: AcadNusx;
+  color: var(--1st);
 }
 
 .nextTourSearch {
   width: 30%;
-  padding: 10px;
+  padding: 13px;
+  font-family: AcadNusx;
+  outline: none;
+  border: 1px #d7cece;
+  border-radius: 8px;
 }
 
 .dateTour {
   width: 20%;
-  padding: 10px;
+  padding: 13px;
+  outline: none;
+  border: 1px #d7cece;
+  border-radius: 8px;
 }
 
 .reservTour {
   width: 12%;
-  padding: 10px;
+  padding: 14px;
   cursor: pointer;
+  font-family: AcadNusx;
+  outline: none;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  border: 1px #d7cece;
+  border-radius: 8px;
+}
+
+.reservTour:hover {
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+
 }
 
 .season-container {
@@ -88,34 +111,80 @@ main {
     justify-content: left;
   }
 
-  #history1 {
-    width: 50%;
-    font-size: 30px;
-    font-family: AcadNusx;
-    text-align: center;
-    border: 2px dashed red;
-    padding: 10px;
-    border-radius: 15px;
-  }
-  
-
   .seasonClass {
     display: flex;
-    position: absolute;
-    top: 100px;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
- 
-
   .example {
-    position: relative;
-    opacity: 0.75;
-    height: 1000px;
-    background-repeat: no-repeat;
+    opacity: 0.5;
+    height: 100%;
   }
 
   #gergeti {
     width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .item1 {
+      display: flex;
+      margin: auto;
+    }
+    
+    .item2 {
+      margin-left: inherit;
+      margin-left: 20%;
+    }
+
+    .nextTourText {
+      font-size: 12px;
+      font-family: AcadNusx;
+    }
+
+    .nextTourSearch {
+      font-size: 5px;
+      width: 40%;
+      padding: 6px;
+      font-family: AcadNusx;
+      outline: none;
+      border: 1px #d7cece;
+      border-radius: 8px;
+    }
+    
+    .dateTour {
+      font-size: 5px;
+      width: 25%;
+      padding: 6px;
+      outline: none;
+      border: 1px #d7cece;
+      border-radius: 8px;
+    }
+    
+    .reservTour {
+      font-size: 5px;
+      width: 15%;
+      padding: 6px;
+      cursor: pointer;
+      font-family: AcadNusx;
+      outline: none;
+      background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+      border: 1px #d7cece;
+      border-radius: 8px;
+    }
+
+    .example {
+      height: 100%;
+    }
+  
+    #gergeti {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+
   }

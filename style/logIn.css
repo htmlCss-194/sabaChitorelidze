@@ -23,6 +23,17 @@
 }
 
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
+  z-index: 100;
+}
 
 
 .item1 { grid-area: enter; }
