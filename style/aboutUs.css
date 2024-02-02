@@ -1,3 +1,8 @@
+@font-face {
+    font-family: AcadNusx;
+    src: url("/Fonts/BPG_Algeti_2018.ttf");
+  }
+
 #logIn {
     font-family: AcadNusx;
     color: var(--1st);
@@ -11,6 +16,29 @@
 }
 
 main{
+    background-color: #F0F8FF;
     min-height: calc(100vh - 240px);
 }
 
+
+
+.abotDiv {
+    position: absolute;
+    top: 250px;
+    text-align: center;
+    width: 80%;
+    margin-left: inherit;
+    margin-left: 10%;
+}
+
+#textAbout {
+    font-size: 25px;
+    color: black;
+    font-family: AcadNusx;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+}
+
+#textAbout::selection {
+    background-color: #73C2FB;
+}
