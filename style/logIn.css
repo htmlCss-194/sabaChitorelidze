@@ -35,7 +35,9 @@ header {
   z-index: 100;
 }
 
-
+main{
+    min-height: calc(100vh - 334px);
+}
 .item1 { grid-area: enter; }
 .item2 { grid-area: header; }
 .item3 { grid-area: menu; }
@@ -50,7 +52,7 @@ header {
     'registration registration registration registration registration registration';
   gap: 10px;
   padding: 10px;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .login-container > div {

@@ -33,11 +33,13 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    position: relative;
 }
 
 header {
   position: fixed;
-  width: 100%;
+  top:0;
+  width: 100%; 
   background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
   z-index: 100;
 }

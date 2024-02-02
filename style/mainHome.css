@@ -125,8 +125,8 @@ main {
 
   #gergeti {
     width: 100%;
-    height: 100%;
-    background-size: cover;
+    /* height: 100%;
+    background-size: cover; */
   }
 
   @media screen and (max-width: 600px) {
