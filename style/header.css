@@ -106,10 +106,16 @@ header {
 
   .tour:hover .tourBt {
     cursor: pointer;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 
   .hotel:hover .hotelBt {
     cursor: pointer;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 
   .tour-content {
@@ -145,14 +151,14 @@ header {
   }
 
   .tour-content a:hover {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     color: var(--1st);
-    background-color: #ddd;
   }
 
   .hotel-content a:hover {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     color: var(--1st);
-    background-color: #ddd;
-  }
+]  }
 
   .tour:hover .tour-content {
     display: block;
@@ -216,7 +222,9 @@ li a {
 }
 
 li a:hover {
-    text-decoration: underline;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 
@@ -230,7 +238,7 @@ select {
     line-height: normal;
     border-style: none;
     outline: none;
-    background-color: rgb(3, 26, 50);
+    background-color: inherit;
     color: var(--2);
     cursor: pointer;
 }
@@ -244,7 +252,6 @@ option {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    color: var(--2);
 }
 
 #logIn {

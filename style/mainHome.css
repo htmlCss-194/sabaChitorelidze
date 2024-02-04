@@ -1,0 +1,228 @@
+@font-face {
+    font-family: AcadNusx;
+    src: url("/Fonts/BPG_Algeti_2018.ttf");
+}
+
+@font-face {
+    font-family: boldText;
+    src: url("/Fonts/OpenSans-Bold.ttf");
+}
+
+
+.popularText {
+    grid-area: popText;
+}
+
+.destinationPhoto {
+    grid-area: destPhoto;
+}
+
+.butDest {
+    grid-area: click;
+}
+
+.mainContainer {
+    margin-top: 5%;
+    display: grid;
+    justify-content: left;
+    width:100%;
+    gap: 25px;
+    grid-template-areas:'popText popText popText popText'
+    'destPhoto destPhoto destPhoto destPhoto '
+    'click click click click';
+    margin-left: inherit;
+}
+
+.popularText {
+    width: 100%;
+}
+
+#popTextStyle {
+    font-family: AcadNusx;
+    margin-left: inherit;
+    margin-left: 15%;
+}
+
+#popPhotoStyle {
+    margin-left: 15%;
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.butDest {
+    margin-left: 45%;
+}
+
+#butStyle {
+    font-family: AcadNusx;
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border-style: none;
+}
+
+#butStyle:hover {
+    background-color: whitesmoke;
+}
+
+#popPhotoStyle:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+.destinationPhoto {
+    position: relative;
+}
+
+.georgiaText {
+    font-family: AcadNusx;
+    position: absolute;
+    top: 50%;
+    width: 55%;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+}
+
+.hoverClass {
+    font-family: AcadNusx;
+    position: absolute;
+    left: 20%;
+    top: 70%;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* container2 */ 
+
+.hotels {
+    grid-area: hotel;
+}
+
+.hotelHeadText {
+    grid-area: hotelheadText;
+}
+
+.mainContainer2 {
+    display: grid ;
+    grid-template-areas:
+    'hotelheadText hotelheadText hotelheadText'
+     'hotel hotel hotel' ;
+}
+
+.hotelHeadText {
+    font-family: AcadNusx;
+    margin-left: 15%;
+    padding-bottom: 60px;
+}
+
+.hotels {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 10.5%;
+}
+
+.price {
+    font-family:AcadNusx ;
+    font-size: 19px;
+    padding-top: 15px;
+}
+
+.hotelName {
+    cursor: pointer;
+    padding-top: 15px;
+    font-family: boldText;
+}
+
+.hotelName:hover {
+    text-decoration: underline;
+}
+
+#hotelPhotos {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.stars {
+    padding-top: 15px;
+}
+
+/* mail*/ 
+
+.photo-container {
+    grid-area: photoMail;
+}
+
+.emailDiv {
+    grid-area: emailDiv;
+}
+
+.mailBox {
+    display: grid;
+    grid-template-areas:'photoMail photoMail emailDiv emailDiv' ;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.photo-container {
+    font-family: AcadNusx;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 22px;
+}
+
+#mailPhoto {
+    width: 70px;
+}
+
+.emailDiv {
+    display: flex;
+    justify-content: left;
+    margin: auto;
+    background-color: violet;
+    width: 80%;
+    margin-right: inherit;
+    margin-right: 30%;
+}
+
+#emailStyle {
+    font-size: 20px;
+    font-family: AcadNusx;
+    width: 100%;
+    padding: 25px;
+    outline: none;
+    border-style: none;
+    background-color: aliceblue;
+}
+
+#emailBut {
+    font-family: AcadNusx;
+    font-size: 24px;
+    width: 30%;
+    outline: none;
+    border-style: none;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+#emailBut::placeholder {
+    font-family: AcadNusx;
+    font-size: 24px;
+}
+
+#emailBut:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+
