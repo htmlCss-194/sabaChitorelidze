@@ -28,21 +28,14 @@
     padding: 0;
 }
 
-header {
-    width: 100%;
-    height: 400px; 
-    background-image: url("/Images/tbilisi-tv-tower-gnta.webp");
-    background-size: cover;
-    z-index: 100;
-  }
 
 main{
     min-height: calc(100vh - 334px);
 }
-.item1 { grid-area: enter; }
-.item2 { grid-area: header; }
-.item3 { grid-area: menu; }
-.item4 { grid-area: registration;}
+.loginMain1 { grid-area: enter; }
+.loginMain2 { grid-area: header; }
+.loginMain3 { grid-area: menu; }
+.loginMain4 { grid-area: registration;}
 
 
 .login-container {
@@ -148,7 +141,7 @@ main{
     margin-left: 8px;
 }
 
-.item2 {
+.loginMain2 {
     display: flex;
     justify-content: space-around;
     align-items: center;

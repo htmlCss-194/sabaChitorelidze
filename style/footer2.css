@@ -27,9 +27,7 @@
 .foot3 { grid-area: main; }
 .foot5 { grid-area: footer;}
 
-footer{
- 
-}
+
 
 .footer2-container {
   display: grid;
