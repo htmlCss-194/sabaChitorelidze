@@ -27,9 +27,19 @@
 }
 
 
-main {
-    background-image: linear-gradient( #fff1eb 0%, #eef1f5 100%);  
-    height: 100%;
+.hello-container {
+  text-align: center;
+  
+}
+
+.textHello {
+  font-family: AcadNusx;
+  font-size: 60px;
+  letter-spacing: 10px;
+  color: var(--2);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); 
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .item1 { grid-area: header; }
@@ -38,28 +48,36 @@ main {
 
 .grid-container {
   width: 100%;
-  position: absolute;
-  top: 350px;
+  height: 500px;
   display: grid;
   grid-template-areas:
     'header header header header header header'
     'menu menu menu menu menu menu';
-  gap: 10px;
+    background-image: url("/Images/batumi.jpg");
+    background-size: 100% 600px;
+    background-repeat: no-repeat;
 }
 
 .item1 {
   display: flex;
   margin: auto;
+  margin-top: 30px;
 }
 
 .item2 {
-  margin-left: inherit;
-  margin-left: 30%;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  margin-bottom: 320px;
 }
 
 .nextTourText {
   font-family: AcadNusx;
   color: var(--1st);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); 
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .nextTourSearch {
@@ -68,15 +86,21 @@ main {
   font-family: AcadNusx;
   outline: none;
   border: 1px #d7cece;
-  border-radius: 8px;
+  border-radius: 8px 0px 0px 8px;
+  background-color: #d7cece;
+}
+
+.nextTourSearch::placeholder {
+  color: #020202;
 }
 
 .dateTour {
-  width: 20%;
+  width: 10%;
   padding: 13px;
   outline: none;
   border: 1px #d7cece;
-  border-radius: 8px;
+  border-radius: 0px;
+  background-color: #d7cece;
 }
 
 .reservTour {
@@ -87,7 +111,7 @@ main {
   outline: none;
   background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
   border: 1px #d7cece;
-  border-radius: 8px;
+  border-radius: 0px 8px 8px 0px;
 }
 
 .reservTour:hover {
@@ -118,16 +142,6 @@ main {
     position: relative;
   }
 
-  .example {
-    opacity: 0.75;
-    height: 100%;
-  }
-
-  #gergeti {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-  }
 
   @media screen and (max-width: 600px) {
 

@@ -15,16 +15,11 @@
     width: 100%;
 }
 
-main{
-    background-color: #F0F8FF;
-    min-height: calc(100vh - 240px);
-}
+
 
 
 
 .abotDiv {
-    position: absolute;
-    top: 250px;
     text-align: center;
     width: 80%;
     margin-left: inherit;
@@ -42,3 +37,112 @@ main{
 #textAbout::selection {
     background-color: #73C2FB;
 }
+
+
+
+.footer-container {
+    background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
+}
+
+.foot1 { grid-area: header; }
+.foot2 { grid-area: menu; }
+.foot3 { grid-area: main; }
+.foot5 { grid-area: footer;}
+
+footer{
+ 
+}
+
+.footer2-container {
+  display: grid;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  align-items: center;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main footer'
+    'menu main main main main footer';
+  background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
+}
+
+footer {
+  width: 100%;
+}
+
+
+.header2 {
+  text-align: center;
+}
+
+.socMediaFooter {
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.foot2 {
+  display: inline;
+  width: 70%;
+}
+
+.foot5Style {
+  font-size: 12px;
+  text-align: right;  
+  margin-right: inherit;
+  margin-right: 25px;
+  margin-top: 10px;
+  color: #E1EBEE;
+  font-family: boldText;
+}
+
+.socMediaDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+}
+
+.foot3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+  margin-left: inherit;
+  margin-left: 13%;
+}
+
+.footerNav {
+  font-family: AcadNusx;
+  text-decoration: none;
+  font-size: 25px;
+  color: #E1EBEE;
+  padding: 5px;
+}
+
+.footerNav:hover {
+  text-decoration: underline;
+}
+
+.addressDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left:37%;
+  line-height: 40px;
+}
+
+#addressStyleH {
+  font-size: 30px;
+  color: #E1EBEE;
+  font-family: boldText;
+}
+
+#addressPStyle {
+  font-size: 15px;
+  color: #E1EBEE;
+  font-family: lightText;
+}
+
+
