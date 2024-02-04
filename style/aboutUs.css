@@ -15,8 +15,15 @@
     width: 100%;
 }
 
+#aboutHead {
+  font-family: AcadNusx;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
 
 .abotDiv {
+    margin-top: 5%;
     text-align: center;
     width: 80%;
     margin-left: inherit;
@@ -35,7 +42,198 @@
     background-color: #73C2FB;
 }
 
+.photo-container {
+    grid-area: photoMail;
+}
 
+.square1 {
+  grid-area:squ1 ;
+}
+.square2 {
+  grid-area:squ2 ;
+}
+.square3 {
+  grid-area:squ3 ;
+}
+.square4 {
+  grid-area:squ4 ;
+}
+
+.square-container {
+  display: grid;
+  grid-template-areas: 'squ1 squ2 squ3 squ4';
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.square1 {
+  font-size: 22px;
+  border: 2px solid #00C9FF;
+  border-radius: 15px;
+  padding: 100px;
+  animation: squ1 20s infinite;
+}
+
+
+
+@keyframes squ1 {
+  0% {
+    transform: rotateY(0deg) 
+  }
+
+  50% {
+    transform: rotateY(180deg);
+    background-image: url("/Images/bodyBack.jfif"); 
+    background-size: cover;
+  }
+
+  100% {
+    transform: rotateY(0deg) 
+  }
+}
+
+.square2 {
+  font-size: 22px;
+  border: 2px solid #00C9FF;
+  border-radius: 15px;
+  padding: 100px;
+  animation: squ2 20s infinite;
+}
+
+@keyframes squ2 {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+    background-image: url("/Images/batumi.jpg"); 
+    background-size: cover;
+  }
+
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+
+
+.square3 {
+  font-size: 22px;
+  border: 2px solid #92FE9D;
+  border-radius: 15px;
+  padding: 100px;
+  animation: squ3 20s infinite;
+
+}
+
+@keyframes squ3 {
+  0% {
+    transform: rotateY(0deg) 
+  }
+
+  50% {
+    transform: rotateY(180deg);
+    background-image: url("/Images/akhasheni.jpg"); 
+    background-size: cover;
+  }
+
+  100% {
+    transform: rotateY(0deg) 
+  }
+}
+
+.square4 {
+  font-size: 22px;
+  border: 2px solid #92FE9D;
+  border-radius: 15px;
+  padding: 100px;
+  animation: squ4 20s infinite;
+
+}
+
+@keyframes squ4 {
+  0% {
+    transform: rotateY(0deg) 
+  }
+
+  50% {
+    transform: rotateY(180deg);
+    background-image: url("/Images/gergeti.jfif"); 
+    background-size: cover;
+  }
+
+  100% {
+    transform: rotateY(0deg) 
+  }
+}
+
+
+.emailDiv {
+    grid-area: emailDiv;
+}
+
+.mailBox {
+    display: grid;
+    grid-template-areas:'photoMail photoMail emailDiv emailDiv' ;
+    justify-content: space-around;
+    margin-top: 5%;
+    padding-bottom: 80px;
+}
+
+.photo-container {
+    font-family: AcadNusx;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 22px;
+}
+
+#mailPhoto {
+    width: 70px;
+}
+
+.emailDiv {
+    display: flex;
+    justify-content: left;
+    margin: auto;
+    background-color: violet;
+    width: 80%;
+    margin-right: inherit;
+    margin-right: 30%;
+}
+
+#emailStyle {
+    font-size: 20px;
+    font-family: AcadNusx;
+    width: 100%;
+    padding: 25px;
+    outline: none;
+    border-style: none;
+    background-color: aliceblue;
+}
+
+#emailBut {
+    font-family: AcadNusx;
+    font-size: 24px;
+    width: 30%;
+    outline: none;
+    border-style: none;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+#emailBut::placeholder {
+    font-family: AcadNusx;
+    font-size: 24px;
+}
+
+#emailBut:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+
+/*footer */
 
 .footer-container {
     background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
@@ -132,5 +330,7 @@
   color: #E1EBEE;
   font-family: lightText;
 }
+
+
 
 
