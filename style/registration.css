@@ -5,12 +5,13 @@
 
 
 
-.registrationItem1 { grid-area: header; }
+.registrationItem1 { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 11; grid-area: header; }
 
 
 .reg-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-areas:
+      grid-template-areas:
     'header header header header header header';
   gap: 10px;
   padding: 20px;
@@ -99,4 +100,3 @@
     cursor: pointer;
     font-family: AcadNusx;
 }
-

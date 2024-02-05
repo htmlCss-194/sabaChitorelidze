@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-family: lightText;
     src: url("./Fonts/OpenSans-Light.ttf");
@@ -32,15 +39,16 @@
 main{
     min-height: calc(100vh - 334px);
 }
-.loginMain1 { grid-area: enter; }
+.loginMain1 { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 11; grid-area: enter; }
 .loginMain2 { grid-area: header; }
-.loginMain3 { grid-area: menu; }
-.loginMain4 { grid-area: registration;}
+.loginMain3 { -ms-grid-row: 3; -ms-grid-column: 1; -ms-grid-column-span: 11; grid-area: menu; }
+.loginMain4 { -ms-grid-row: 5; -ms-grid-column: 1; -ms-grid-column-span: 11; grid-area: registration;}
 
 
 .login-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-areas:
+      grid-template-areas:
     'enter enter enter enter enter enter'
     'menu menu menu menu menu menu'
     'registration registration registration registration registration registration';
@@ -64,7 +72,29 @@ main{
 
 #log:focus {
     color: #000;
+    background: -webkit-gradient(linear, left top, right top, from(#e3ffe7), to(#d9e7ff));
+    background: -o-linear-gradient(left, #e3ffe7 0%, #d9e7ff 100%);
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+#log:focus::-webkit-input-placeholder {
+    color: #000;
+    font-family: AcadNusx;
+}
+
+#log:focus::-moz-placeholder {
+    color: #000;
+    font-family: AcadNusx;
+}
+
+#log:focus:-ms-input-placeholder {
+    color: #000;
+    font-family: AcadNusx;
+}
+
+#log:focus::-ms-input-placeholder {
+    color: #000;
+    font-family: AcadNusx;
 }
 
 #log:focus::placeholder {
@@ -83,7 +113,29 @@ main{
 
 #pass:focus {
     color: #000;
+    background: -webkit-gradient(linear, left top, right top, from(#e3ffe7), to(#d9e7ff));
+    background: -o-linear-gradient(left, #e3ffe7 0%, #d9e7ff 100%);
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+#pass:focus::-webkit-input-placeholder {
+    font-family: AcadNusx;
+    color: #000;
+}
+
+#pass:focus::-moz-placeholder {
+    font-family: AcadNusx;
+    color: #000;
+}
+
+#pass:focus:-ms-input-placeholder {
+    font-family: AcadNusx;
+    color: #000;
+}
+
+#pass:focus::-ms-input-placeholder {
+    font-family: AcadNusx;
+    color: #000;
 }
 
 #pass:focus::placeholder {
@@ -108,6 +160,8 @@ main{
 }
 
 #logIn:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#e3ffe7), to(#d9e7ff));
+    background: -o-linear-gradient(left, #e3ffe7 0%, #d9e7ff 100%);
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);    
 }
 
@@ -115,6 +169,8 @@ main{
     width: 35%;
     font-family: AcadNusx;
     color: var(--1st);
+    background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+    background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     padding: 10px 37px;
     border: 1px #d7cece;
@@ -124,13 +180,19 @@ main{
 }
 
 #registration:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#e3ffe7), to(#d9e7ff));
+    background: -o-linear-gradient(left, #e3ffe7 0%, #d9e7ff 100%);
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);    
 }
 
 
 .remember {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     margin: inherit;
     margin-left: 15%;
     margin-right: 10%;
@@ -142,9 +204,14 @@ main{
 }
 
 .loginMain2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: inherit;
     margin-right: 25%;
     margin-left: 17%;

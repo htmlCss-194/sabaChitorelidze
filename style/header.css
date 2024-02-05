@@ -18,72 +18,563 @@
     src: url("/Fonts/BPG_Algeti_2018.ttf");
 }
 
+
 :root {
-    --1st: #212832;
+  --1st: #212832;
 }
 
 :root {
-    --2: #E1EBEE;
+  --2: #E1EBEE;
 }
 
 
 
 
 body {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    position: relative;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
 }
 
 header {
-  width: 100%;
-  height: 500px; 
-  background-image: url("/Images/tbilisi-tv-tower-gnta.webp");
-  background-size: cover;
-  z-index: 100;
+width: 100%;
+height: 500px; 
+background-image: url("/Images/tbilisi-tv-tower-gnta.webp");
+background-size: cover;
+z-index: 100;
 }
 
 
 
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-.header1 { grid-area: header; }
-.header2 { grid-area: menu; }
-.header3 { grid-area: right; }
-.header4 { grid-area: Photo;}
+.header1 { -ms-grid-row: 1; -ms-grid-column: 2; -ms-grid-column-span: 3; grid-area: header; }
+.header2 { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: menu; }
+.header3 { -ms-grid-row: 1; -ms-grid-column: 5; -ms-grid-column-span: 2; grid-area: right; }
+.header4 { -ms-grid-row: 2; -ms-grid-column: 1; -ms-grid-column-span: 6; grid-area: Photo;}
 
 .header-container {
-  display: grid;
-  justify-content: space-around;
-  align-items: center;
-  padding: 25px 20px;
-  grid-template-areas:
-    'menu header header header right right'
-    'Photo Photo Photo Photo Photo Photo';
+display: -ms-grid;
+display: grid;
+-ms-flex-pack: distribute;
+    justify-content: space-around;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+padding: 25px 20px;
+    grid-template-areas:
+  'menu header header header right right'
+  'Photo Photo Photo Photo Photo Photo';
 }
 
 .header4 {
-  text-align: center;
+text-align: center;
 }
 
 .tour {
-    float: left;
-    overflow: hidden;
-    z-index: 1;
+  float: left;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hotel {
+  float: left;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.tour .tourBt {
+  font-size: 17.612px;
+  border: none;
+  outline: none;
+  color: var(--2);
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+  font-family: AcadNusx;
+}
+
+.hotel .hotelBt {
+  font-size: 17.612px;
+  border: none;
+  outline: none;
+  color: var(--2);
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+  font-family: AcadNusx;
+}
+
+.tour:hover .tourBt {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+  background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.hotel:hover .hotelBt {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+  background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.tour-content {
+  display: none;
+  position: absolute;
+}
+
+.hotel-content {
+  display: none;
+  position: absolute;
+}
+
+.tour-content a {
+  color: var(--2);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: AcadNusx;
+  background-color: rgb(23, 37, 64);
+}
+
+.hotel-content a {
+  color: var(--2);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: AcadNusx;
+  background-color: rgb(23, 37, 64);
+}
+
+.tour-content a:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+  background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  color: var(--1st);
+}
+
+.hotel-content a:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+  background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  color: var(--1st);
+}
+
+.tour:hover .tour-content {
+  display: block;
+}
+
+.hotel:hover .hotel-content {
+  display: block;
+}
+
+.header3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+
+#titleStyle {
+  font-family: boldText;
+  font-size: 52px;
+  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+  background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#titleStyle :last-child {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+  background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);   
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: relative;
+  -webkit-animation: flip 5s infinite;
+          animation: flip 5s infinite;
+}
+
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  margin-left: inherit;
+  margin-left: 10%;
+  margin-right: 10%;
+  z-index: 1;
+}
+
+
+
+li a {
+  text-decoration: none;
+  color: var(--1st);
+  font-family: "lightText";
+  font-size: 17.612px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color:var(--2);
+}
+
+#navStyle {
+  font-family: AcadNusx;
+}
+
+li a:hover {
+background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+
+
+
+
+select {
+  font-family: "mediumText";
+  font-size: 22.612px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-style: none;
+  outline: none;
+  background-color: inherit;
+  color: var(--2);
+  cursor: pointer;
+}
+
+
+
+option {
+  color: var(--1st, #212832);
+  font-family: "mediumText";
+  font-size: 22.612px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#logIn {
+  font-family: AcadNusx;
+  color: var(--1st);
+  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+  background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  padding: 10px 37px;
+  border: 1px #d7cece;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#logIn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#efd5ff), to(#515ada));
+  background: -o-linear-gradient(left, #efd5ff 0%, #515ada 100%);
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+.textHello {
+font-family: AcadNusx;
+font-size: 60px;
+letter-spacing: 10px;
+color: var(--2);
+background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); 
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+margin-top: 30px;
+}
+
+.item1 { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 6; grid-area: header; }
+.item2 { -ms-grid-row: 2; -ms-grid-column: 1; -ms-grid-column-span: 6; grid-area: menu; }
+
+
+.grid-container {
+display: -ms-grid;
+display: grid;
+    grid-template-areas:
+  'header header header header header header'
+  'menu menu menu menu menu menu';
+}
+
+.item1 {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+margin: auto;
+margin-top: 60px;
+}
+
+.item2 {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+width: 100%;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+margin-top: 80px;
+}
+
+.nextTourText {
+font-family: AcadNusx;
+color: var(--1st);
+background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); 
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+
+.nextTourSearch {
+width: 30%;
+padding: 13px;
+font-family: AcadNusx;
+outline: none;
+border: 1px #d7cece;
+border-radius: 8px 0px 0px 8px;
+background-color: #d7cece;
+}
+
+.nextTourSearch::-webkit-input-placeholder {
+color: #020202;
+}
+
+.nextTourSearch::-moz-placeholder {
+color: #020202;
+}
+
+.nextTourSearch:-ms-input-placeholder {
+color: #020202;
+}
+
+.nextTourSearch::-ms-input-placeholder {
+color: #020202;
+}
+
+.nextTourSearch::placeholder {
+color: #020202;
+}
+
+.dateTour {
+width: 15%;
+padding: 13px;
+outline: none;
+border: 1px #d7cece;
+border-radius: 0px;
+background-color: #d7cece;
+}
+
+.reservTour {
+width: 10%;
+padding: 14px;
+cursor: pointer;
+font-family: AcadNusx;
+outline: none;
+background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+border: 1px #d7cece;
+border-radius: 0px 8px 8px 0px;
+}
+
+.reservTour:hover {
+background: -webkit-gradient(linear, left top, right top, from(#efd5ff), to(#515ada));
+background: -o-linear-gradient(left, #efd5ff 0%, #515ada 100%);
+background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+
+
+
+
+
+@-webkit-keyframes flip {
+  0% {
+    -webkit-transform: rotateY(30deg);
+            transform: rotateY(30deg) 
   }
 
-  .hotel {
-    float: left;
-    overflow: hidden;
-    z-index: 1;
+  20% {
+      -webkit-transform: rotateY(40deg);
+              transform: rotateY(40deg);
+      
+  }
+
+  40% {
+      -webkit-transform: rotateY(50deg);
+              transform: rotateY(50deg);
+      
+  }
+
+  60% {
+      -webkit-transform: rotateY(60deg);
+              transform: rotateY(60deg);
+     
+  }
+
+  80% {
+      -webkit-transform: rotateY(40deg);
+              transform: rotateY(40deg);
+  }
+     
+
+  100% {
+      -webkit-transform: rotateY(30deg);
+              transform: rotateY(30deg);
+     
+  }
+}
+
+
+
+
+
+
+@keyframes flip {
+  0% {
+    -webkit-transform: rotateY(30deg);
+            transform: rotateY(30deg) 
+  }
+
+  20% {
+      -webkit-transform: rotateY(40deg);
+              transform: rotateY(40deg);
+      
+  }
+
+  40% {
+      -webkit-transform: rotateY(50deg);
+              transform: rotateY(50deg);
+      
+  }
+
+  60% {
+      -webkit-transform: rotateY(60deg);
+              transform: rotateY(60deg);
+     
+  }
+
+  80% {
+      -webkit-transform: rotateY(40deg);
+              transform: rotateY(40deg);
+  }
+     
+
+  100% {
+      -webkit-transform: rotateY(30deg);
+              transform: rotateY(30deg);
+     
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+  
+    #titleStyle {
+      font-family: boldText;
+      font-size: 13px;
+      background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+      background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+      background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+    
+    
+    #titleStyle :last-child {
+      display: inline-block;
+      background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+      background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+      background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);   
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      position: relative;
+      -webkit-animation: flip 5s infinite;
+              animation: flip 5s infinite;
+    }
+
+    .header-container {
+      display: -ms-grid;
+      display: grid;
+          grid-template-areas:
+        'menu menu menu menu menu right'
+        'header header header header header header';
+        padding: 3%;
+    }
+    
+    select {
+      font-family: "mediumText";
+      font-size: 7.612px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border-style: none;
+      outline: none;
+      background-color: #0C2340;
+      color: var(--2);
+      cursor: pointer;
+  }
+  
+  
+  
+  option {
+      color: var(--1st, #212832);
+      font-family: "mediumText";
+      font-size: 7.612px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      color: var(--2);
+  }
+
+
+  .header2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
   }
 
   .tour .tourBt {
-    font-size: 17.612px;
+    font-size: 8.612px;
     border: none;
     outline: none;
     color: var(--2);
@@ -94,7 +585,7 @@ header {
   }
 
   .hotel .hotelBt {
-    font-size: 17.612px;
+    font-size: 8.612px;
     border: none;
     outline: none;
     color: var(--2);
@@ -102,103 +593,44 @@ header {
     background-color: inherit;
     margin: 0;
     font-family: AcadNusx;
-  }
-
-  .tour:hover .tourBt {
-    cursor: pointer;
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-
-  .hotel:hover .hotelBt {
-    cursor: pointer;
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-
-  .tour-content {
-    display: none;
-    position: absolute;
-  }
-
-  .hotel-content {
-    display: none;
-    position: absolute;
+    
   }
 
   .tour-content a {
+    float: none;
     color: var(--2);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
     font-family: AcadNusx;
-    background-color: rgb(23, 37, 64);
+    font-size: 7px;
   }
 
   .hotel-content a {
+    float: none;
     color: var(--2);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
     font-family: AcadNusx;
-    background-color: rgb(23, 37, 64);
+    font-size: 7px;
   }
 
-  .tour-content a:hover {
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-    color: var(--1st);
-  }
-
-  .hotel-content a:hover {
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-    color: var(--1st);
-  }
-
-  .tour:hover .tour-content {
-    display: block;
-  }
-
-  .hotel:hover .hotel-content {
-    display: block;
-  }
-
-.header3 {
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-}
-
-
-  #titleStyle {
-    font-family: boldText;
-    font-size: 52px;
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-
-  #titleStyle :last-child {
-    display: inline-block;
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);   
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    position: relative;
-    animation: flip 5s infinite;
-  }
-
-
- ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style-type: none;
     margin-left: inherit;
-    margin-left: 10%;
-    margin-right: 10%;
-    z-index: 1;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 
@@ -207,7 +639,7 @@ li a {
     text-decoration: none;
     color: var(--1st);
     font-family: "lightText";
-    font-size: 17.612px;
+    font-size: 8.612px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -220,330 +652,53 @@ li a {
 }
 
 li a:hover {
-  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+    text-decoration: underline;
 }
 
-
-
-
-select {
-    font-family: "mediumText";
-    font-size: 22.612px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    border-style: none;
-    outline: none;
-    background-color: inherit;
-    color: var(--2);
-    cursor: pointer;
-}
-
-
-
-option {
-    color: var(--1st, #212832);
-    font-family: "mediumText";
-    font-size: 22.612px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-#logIn {
+  .header3 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+  }
+  
+  #logIn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-family: AcadNusx;
     color: var(--1st);
+    background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+    background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-    padding: 10px 37px;
+    padding: 5px 27px;
     border: 1px #d7cece;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 8px;
     cursor: pointer;
-    width: 100%;
+    width: 60%;
 }
 
-#logIn:hover {
-    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
-}
-
-.textHello {
-  font-family: AcadNusx;
-  font-size: 60px;
-  letter-spacing: 10px;
-  color: var(--2);
-  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); 
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  margin-top: 30px;
-}
-
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu menu menu menu menu menu';
-}
-
-.item1 {
-  display: flex;
-  margin: auto;
-  margin-top: 60px;
-}
-
-.item2 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 80px;
-}
-
-.nextTourText {
-  font-family: AcadNusx;
-  color: var(--1st);
-  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); 
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-.nextTourSearch {
-  width: 30%;
-  padding: 13px;
-  font-family: AcadNusx;
-  outline: none;
-  border: 1px #d7cece;
-  border-radius: 8px 0px 0px 8px;
-  background-color: #d7cece;
-}
-
-.nextTourSearch::placeholder {
-  color: #020202;
-}
-
-.dateTour {
-  width: 15%;
-  padding: 13px;
-  outline: none;
-  border: 1px #d7cece;
-  border-radius: 0px;
-  background-color: #d7cece;
-}
-
-.reservTour {
-  width: 10%;
-  padding: 14px;
-  cursor: pointer;
-  font-family: AcadNusx;
-  outline: none;
-  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-  border: 1px #d7cece;
-  border-radius: 0px 8px 8px 0px;
-}
-
-.reservTour:hover {
-  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
-}
-
-
-
-
-
-
-@keyframes flip {
-    0% {
-      transform: rotateY(30deg) 
+    .header-container > .item1 {
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 6;
     }
 
-    20% {
-        transform: rotateY(40deg);
-        
+    .header-container > .item2 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 5;
     }
-
-    40% {
-        transform: rotateY(50deg);
-        
-    }
-
-    60% {
-        transform: rotateY(60deg);
-       
-    }
-
-    80% {
-        transform: rotateY(40deg);
-    }
-       
-
-    100% {
-        transform: rotateY(30deg);
-       
-    }
-  }
-  
-
-
- @media screen and (max-width: 600px) {
-
-
-    
-      #titleStyle {
-        font-family: boldText;
-        font-size: 13px;
-        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-      }
-      
-      
-      #titleStyle :last-child {
-        display: inline-block;
-        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);   
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        position: relative;
-        animation: flip 5s infinite;
-      }
-
-      .header-container {
-        display: grid;
-        grid-template-areas:
-          'menu menu menu menu menu right'
-          'header header header header header header';
-          padding: 3%;
-      }
-      
-      select {
-        font-family: "mediumText";
-        font-size: 7.612px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        border-style: none;
-        outline: none;
-        background-color: #0C2340;
-        color: var(--2);
-        cursor: pointer;
-    }
-    
-    
-    
-    option {
-        color: var(--1st, #212832);
-        font-family: "mediumText";
-        font-size: 7.612px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        color: var(--2);
-    }
-
-
-    .header2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .tour .tourBt {
-      font-size: 8.612px;
-      border: none;
-      outline: none;
-      color: var(--2);
-      padding: 14px 16px;
-      background-color: inherit;
-      margin: 0;
-      font-family: AcadNusx;
-    }
-  
-    .hotel .hotelBt {
-      font-size: 8.612px;
-      border: none;
-      outline: none;
-      color: var(--2);
-      padding: 14px 16px;
-      background-color: inherit;
-      margin: 0;
-      font-family: AcadNusx;
-      
-    }
-
-    .tour-content a {
-      float: none;
-      color: var(--2);
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-      font-family: AcadNusx;
-      font-size: 7px;
-    }
-  
-    .hotel-content a {
-      float: none;
-      color: var(--2);
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-      font-family: AcadNusx;
-      font-size: 7px;
-    }
-
-    ul {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      list-style-type: none;
-      margin-left: inherit;
-      margin-left: 0%;
-      margin-right: 0%;
-  }
-  
-  
-  
-  li a {
-      text-decoration: none;
-      color: var(--1st);
-      font-family: "lightText";
-      font-size: 8.612px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      color:var(--2);
-  }
-  
-  #navStyle {
-      font-family: AcadNusx;
-  
-  }
-  
-  li a:hover {
-      text-decoration: underline;
-  }
-
-    .header3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #logIn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: AcadNusx;
-      color: var(--1st);
-      background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-      padding: 5px 27px;
-      border: 1px #d7cece;
-      border-radius: 8px;
-      font-size: 8px;
-      cursor: pointer;
-      width: 60%;
-  }
 }  

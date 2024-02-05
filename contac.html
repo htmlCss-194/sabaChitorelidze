@@ -5,8 +5,8 @@
     <meta name="author" content="Saba Chitorelidze">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/header.css">
-    <link rel="stylesheet" href="./style/footer2.css">
     <link rel="stylesheet" href="./style/contactUs.css">
+    <link rel="stylesheet" href="./style/mainHome.css">
 </head>
 <body>
     <header>
@@ -58,12 +58,42 @@
 
 
    <main>
+    
+    <div class="contact-Container">
+        <div class="textHead">
+            <h2 id="textUs">მოგვწერეთ</h2>
+            <p id="sendUs">გამოგვიგზავნეთ შეტყობინება</p>
+        </div>
+        <div class="contactText">
+            <div class="contacInfo">
+                <h3 id="contactRight">შპს "ჯეორჯიანთრეველი"</h3>
+                <p id="rightText"> ტელ: +995 032 14 13 12</p>
+                <p id="rightText">ელ.ფოსტა info@georgianTravel.ge</p>
+                <p id="rightText">რუსთაველის 37, თბილისი, საქართველო 0101</p>
+            </div>
+            <input type="text" name="fname" id="nameText" placeholder="სახელი"><br>
+            <input type="email" name="" id="emailText" placeholder="ელ.ფოსტა"><br>
+            <textarea name="" id="smsArea" cols="30" rows="10" placeholder="შეტყობინება"></textarea><br>
+            <button id="sendBut">გაგზავნა</button><br><br>
+        </div>
+    </div>
 
-   
+    <div class="mailBox">
+        <div class="photo-container">
+            <img id="mailPhoto" src="./Images/mail.png" alt="Image">
+            <h3>მიიღე სიახლეები!</h3>
+        </div>
 
+        <div class="emailDiv">
+            <input id="emailStyle" type="email" placeholder="თქვენი ელ.ფოსტა">
+            <button id="emailBut">გამოწერა</button>
+        </div>
+    </div>
+    <br><br>
    </main>
 
     <footer>
+       
         <div class="footer2-container">
             <div class="foot1">
                 <div class="header2"><h1 id="titleStyle">GeorgianTravel</h1>
