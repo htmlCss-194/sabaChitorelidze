@@ -95,7 +95,9 @@ footer {
 }
 
 .footerNav:hover {
-  text-decoration: underline;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .addressDiv {
