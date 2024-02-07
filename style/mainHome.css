@@ -36,11 +36,11 @@
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
     width:100%;
     gap: 25px;
-        grid-template-areas:'popText popText popText popText'
+    grid-template-areas:'popText popText popText popText'
     'destPhoto destPhoto destPhoto destPhoto '
     'click click click click';
     margin-left: inherit;
