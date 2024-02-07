@@ -155,11 +155,21 @@ main{
     text-decoration: underline;
 }
 
-#logIn {
+#logIn2 {
     width: 35%;
+    font-family: AcadNusx;
+    color: var(--1st);
+    background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+    background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    padding: 10px 37px;
+    border: 1px #d7cece;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-#logIn:hover {
+#logIn2:hover {
     background: -webkit-gradient(linear, left top, right top, from(#e3ffe7), to(#d9e7ff));
     background: -o-linear-gradient(left, #e3ffe7 0%, #d9e7ff 100%);
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);    
@@ -191,8 +201,8 @@ main{
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
     margin: inherit;
     margin-left: 15%;
     margin-right: 10%;
@@ -215,4 +225,83 @@ main{
     margin: inherit;
     margin-right: 25%;
     margin-left: 17%;
+}
+
+@media screen and (max-width: 600px) {
+
+    #log {
+        font-size: 11px;
+        border-radius: 8px;
+        width: 80%;
+        padding: 10px 37px;
+        border: 1px solid #0093E9; 
+        outline: none;
+        font-family: AcadNusx;
+    }
+
+   
+    
+    #logIn2 {
+        width: 55%;
+        font-family: AcadNusx;
+        color: var(--1st);
+        background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+        background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+        padding: 10px 37px;
+        border-radius: 8px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+
+    #pass {
+        font-size: 11px;
+        font-family: AcadNusx;
+        border-radius: 7px;
+        width: 80%;
+        padding: 10px 37px;
+        border: 1px solid #0093E9; 
+        outline: none;   
+    }
+
+    #registration {
+        width: 55%;
+        font-family: AcadNusx;
+        color: var(--1st);
+        background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+        background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+        padding: 10px 37px;
+        border-radius: 8px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    #passRes {
+        font-size: 8px;
+        border-style: none;
+        outline: none;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+    }
+
+    .remember {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: left;
+        margin: inherit;
+        margin-left: 15%;
+        margin-right: 10%;
+        font-size: 8px;
+    }
+
+    #checkbox {
+        width: 10%;
+    }
+
 }
