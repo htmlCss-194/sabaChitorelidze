@@ -1,43 +1,178 @@
-<html>
-<head>
+<DOCTYPE html>
+<html lang="en">
+<head> 
     <title>GeorgianTravel</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Saba Chitorelidze">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/mainHome.css">
+    <link rel="stylesheet" href="./style/transform.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <h1 id="titleStyle">Georgian<span>Travel</span></h1>
-                <li><a href="#Desitnations">Desitnations</a></li>
-                <li><a href="#hotel">Hotels</a></li>
-                <li><a href="#Flights">Flights</a></li>
-                <li><a href="#Bookings">Bookings</a></li>
-                <li><a href="#Login">Login</a></li>
-                <li><a id="singUp" href="#Sign up">Sign up</a></li>
+        <div class="header-container">
+            <div class="header1">
+                <ul>
+                    <li><a id="navStyle" href="./index.html">მთავარი</a></li>
+                        <li class="tour">
+                        <a class="tourBt">ტურები 
+                        </a>
+                        <div class="tour-content">
+                          <a href="#">თბილისი</a>
+                          <a href="#">რეგიონები</a>
+                          <a href="#">ჯგუფური</a>
+                          <a href="#">ინდივიდუალური</a>
+                        </div>
+                        </li>
+                      <li class="hotel">
+                        <a class="hotelBt">სასტუმროები 
+                        </a>
+                        <div class="hotel-content">
+                          <a href="#">თბილისი</a>
+                          <a href="#">კახეთი</a>
+                          <a href="#">იმერეთი</a>
+                          <a href="#">აჭარა</a>
+                          <a href="#">სამეგრელო</a>
+                          <a href="#">სხვა რეგიონები</a>
+                    </li> 
+                    <li><a id="navStyle" href="./aboutUs.html">ჩვენ შესახებ</a></li>
+                    <li><a id="navStyle" href="./contac.html">კონტაქტი</a></li> 
+                </ul>
+            </div>
+
+            <div class="header2"><h1 id="titleStyle">Georgian<span>Travel</span></h1>
+            </div>
+
+            <div class="header3"> 
+                <form action="./logIn.html">
+                    <input type="submit" id="logIn" value="შესვლა">
+                </form>
                 <select name="language" id="lang">
-                    <option value="en">EN</option>
                     <option value="ge">GE</option>
-                    <option value="Rus">RUS</option>
+                    <option value="en">EN</option>
                 </select>
-            </ul>
-        </nav> 
+            </div>
+            <div class="header4">
+                <h1 class="textHello">გამარჯობა!</h1>
+                <div class="grid-container">
+                    <div class="item1"><h1 class="nextTourText">სად მიემგზავრები?</h1></div>
+                    <div class="item2"><br>
+                        <input class="nextTourSearch" type="text" placeholder="რომელია შენი შემდეგი ტური?">
+                        <input class="dateTour" type="date">
+                        <button class="reservTour">დაჯავშნა</button>
+                    </div>
+                  </div>
+            </div>
+          </div>
     </header>
+   
+   <main> 
 
-   <main>
+    <div class="mainContainer">
+        <div class="popularText">
+            <h1 id="popTextStyle">პოპულარული მიმართულებები</h1>
+        </div>
 
+        <div class="destinationPhoto">
+            <img id="popPhotoStyle" src="/Images/popPhoto.webp" alt="Image">
+            <div class="hoverClass">
+                <li>28ტური</li>
+                <li>80 სასტუმრო</li>
+                <li>6 აქტივობა</li>
+            </div>
+            <div class="georgiaText">საქართველო</div>
+        </div>
+        <div class="butDest">
+            <button id="butStyle">ყველა მიმართულება</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="mainContainer2">
+        <div class="hotelHeadText">
+            <h1 class="popText"> პოპულარული სასტუმროები</h1>
+        </div>
+        <div class="hotels">
+            <div class="hotel1">
+            <img id="hotelPhotos" src="./Images/akhasheni.jpg" alt="Image">
+            <p class="hotelName">Akhasheni Wine Resort</p>
+            <p class="price">₾390/ღამე</p>
+            <div class="stars">
+                <img id="starStyle" src="/Images/star.png" alt="Image">
+                <img id="starStyle" src="/Images/star.png" alt="Image">
+                <img id="starStyle" src="/Images/star.png" alt="Image">
+                <img id="starStyle" src="/Images/star.png" alt="Image">
+                <img id="starStyle" src="/Images/star.png" alt="Image">
+            </div>
+            </div>
+            <div class="hotel2">
+            <img id="hotelPhotos" src="./Images/ambasa.jpg" alt="Image">
+            <p class="hotelName">Ambassadori Kachreti Resort</p>
+            <p class="price">₾412/ღამე</p>
+            <div class="stars">
+                <img id="starStyle" src="/Images/star.png" alt="">
+                <img id="starStyle" src="/Images/star.png" alt="">
+                <img id="starStyle" src="/Images/star.png" alt="">
+                <img id="starStyle" src="/Images/star.png" alt="">
+                <img id="starStyle" src="/Images/star.png" alt="">
+            </div>
+            </div>
+            <div class="hotel3">
+            <img id="hotelPhotos" src="./Images/kvarel.jpg" alt="Image">
+            <p class="hotelName">Kvareli Lake Resort</p>
+            <p class="price">₾266/ღამე</p>
+            <div class="stars">
+                <img id="starStyle" src="/Images/star.png" alt="">
+                <img id="starStyle" src="/Images/star.png" alt="">
+                <img id="starStyle" src="/Images/star.png" alt="">
+                <img id="starStyle" src="/Images/star.png" alt="">
+                <img id="starStyle" src="/Images/star.png" alt="">
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mailBox">
+        <div class="photo-container">
+            <img id="mailPhoto" src="./Images/mail.png" alt="Image">
+            <h3>მიიღე სიახლეები!</h3>
+        </div>
+
+        <div class="emailDiv">
+            <input id="emailStyle" type="email" placeholder="თქვენი ელ.ფოსტა">
+            <button id="emailBut">გამოწერა</button>
+        </div>
+    </div>
    </main>
-
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
     <footer>
         <div class="runningLine">
             <span class="runningLine_content">
-                Travel, enjoy
-                and live a new
-                and full life
+                დაგეგმე მოგზაურობა
             </span>
             <span class="runningLine_content">
-                We Offer Best Services
+                აღმოაჩინე საქართველო
+            </span>
+            <span class="runningLine_content">
+                
             </span>
         </div>
     </footer>

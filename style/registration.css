@@ -1,0 +1,274 @@
+@font-face {
+    font-family: AcadNusx;
+    src: url("/Fonts/BPG_Algeti_2018.ttf");
+}
+
+
+
+.registrationItem1 { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 11; grid-area: header; }
+
+
+.reg-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas:
+    'header header header header header header';
+  gap: 10px;
+  padding: 20px;
+  font-family: AcadNusx;
+  padding-bottom: 100px;
+}
+
+
+.regText {
+    font-size: 25px;
+}
+
+#fname {
+    border: 1px solid;
+    width: 20%;
+    padding: 15px;
+    font-size: 20px;
+    outline: none;
+    background-color:whitesmoke;
+}
+
+#lname {
+    border: 1px solid;
+    width: 20%;
+    padding: 15px; 
+    font-size: 20px;
+    margin-left: 18px;
+    outline: none;
+    background-color:whitesmoke;
+}
+
+#phoneNumber {
+    border: 1px solid;
+    width: 20%;
+    padding: 15px; 
+    font-size: 20px;
+    margin-left: 18px;
+    outline: none;
+    background-color:whitesmoke;
+} 
+
+#personalNum {
+    width: 20%;
+    padding: 15px; 
+    font-size: 20px;
+    margin-left: 18px;
+    outline: none;  
+    border: 1px solid;
+    background-color:whitesmoke;
+}
+
+#email {
+    border: 1px solid;
+    width: 20%;
+    padding: 15px; 
+    font-size: 20px;
+    margin-left: 18px;
+    outline: none;  
+    border: 1px solid;
+    background-color:whitesmoke;
+}
+
+#password {
+    width: 20%;
+    padding: 15px; 
+    font-size: 20px;
+    margin-left: 18px;
+    outline: none; 
+    border: 1px solid;
+    background-color:whitesmoke;
+}
+
+#birthday {
+    width: 15%;
+    padding: 15px;
+    outline: none;
+    border: 1px solid;
+    background-color:whitesmoke;
+}
+
+#reg {
+    width: 20%;
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: AcadNusx;
+}
+
+@media screen and (max-width: 600px) {
+    .regText {
+        font-size: 15px;
+    }
+    
+    #fname {
+        margin-top: 2%;
+        border: 1px solid;
+        width: 90%;
+        margin-left: 5%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        background-color:whitesmoke;
+    }
+    
+    #lname {
+        margin-top: 2%;
+        border: 1px solid;
+        width: 90%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        background-color:whitesmoke;
+    }
+    
+    #phoneNumber {
+        margin-top: 2%;
+        border: 1px solid;
+        width: 90%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        background-color:whitesmoke;
+    } 
+    
+    #personalNum {
+        margin-top: 2%;
+        border: 1px solid;
+        width: 90%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        background-color:whitesmoke;
+    }
+    
+    #email {
+        margin-top: 2%;
+        border: 1px solid;
+        width: 90%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        background-color:whitesmoke;
+    }
+    
+    #password {
+        margin-top: 2%;
+        border: 1px solid;
+        width: 90%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        background-color:whitesmoke;
+    }
+    
+    #birthday {
+        margin-top: 2%;
+        margin-left: 5%;
+        width: 90%;
+        padding: 10px;
+        outline: none;
+        border: 1px solid;
+        background-color:whitesmoke;
+    }
+    
+    #reg {
+        width: 50%;
+        font-size: 15px;
+        padding: 7px;
+        cursor: pointer;
+        font-family: AcadNusx;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .regText {
+        font-size: 15px;
+    }
+    
+    #fname {
+        margin-top: 2%;
+        border: 1px solid;
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        background-color:whitesmoke;
+    }
+    
+    #lname {
+        margin-top: 2%;
+        margin-left: -0.3%;
+        border: 1px solid;
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        background-color:whitesmoke;
+    }
+    
+    #phoneNumber {
+        margin-top: 2%;
+        margin-left: -0.3%;
+        border: 1px solid;
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        background-color:whitesmoke;
+    } 
+    
+    #personalNum {
+        margin-top: 2%;
+        margin-left: -0.3%;
+        border: 1px solid;
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        background-color:whitesmoke;
+    }
+    
+    #email {
+        margin-top: 2%;
+        margin-left: -0.3%;
+        border: 1px solid;
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        background-color:whitesmoke;
+    }
+    
+    #password {
+        margin-top: 2%;
+        margin-left: -0.3%;
+        border: 1px solid;
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        background-color:whitesmoke;
+    }
+    
+    #birthday {
+        margin-top: 2%;
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        border: 1px solid;
+        background-color:whitesmoke;
+    }
+    
+    #reg {
+        width: 50%;
+        font-size: 15px;
+        padding: 7px;
+        cursor: pointer;
+        font-family: AcadNusx;
+    }
+}

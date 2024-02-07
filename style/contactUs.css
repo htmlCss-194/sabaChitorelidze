@@ -1,0 +1,451 @@
+
+@font-face {
+  font-family: AcadNusx;
+  src: url("/Fonts/BPG_Algeti_2018.ttf");
+}
+
+#logIn {
+  font-family: AcadNusx;
+  color: var(--1st);
+  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+  background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  padding: 10px 37px;
+  border: 1px #d7cece;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.textHead {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: textHeader;
+}
+.contactText {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: contact;
+}
+
+.contact-Container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'textHeader textHeader textHeader'
+  'contact contact contact';
+  gap: 20px;
+  margin-top: 5%;
+  margin-left: inherit;
+}
+
+.contacInfo {
+  text-align: center;
+  margin-left: 40%;
+  position: absolute;
+  border: 1px solid #00C9FF;
+  padding: 20px;
+}
+
+.contactText {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15%;
+}
+
+#textUs {
+  font-family:AcadNusx;
+  font-size: 42px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+#sendUs {
+  font-family:AcadNusx;
+  font-size: 22px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.textHead {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 15%;
+}
+
+#nameText {
+  width: 40%;
+  padding: 15px;
+  font-family: AcadNusx;
+  font-size: 22px;
+  outline: none;
+}
+
+#emailText {
+  width: 40%;
+  padding: 15px;
+  font-family: AcadNusx;
+  font-size: 22px;
+  outline: none;
+}
+
+#smsArea {
+  width: 40%;
+  font-family: AcadNusx;
+  font-size: 22px;
+  outline: none;
+  padding: 10px;
+}
+
+#sendBut {
+  font-family: AcadNusx;
+  width: 20%;
+  font-size: 22px;
+  padding: 10px;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+  background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+#sendBut:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#efd5ff), to(#515ada));
+  background: -o-linear-gradient(left, #efd5ff 0%, #515ada 100%);
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+
+#contactRight {
+  font-family: AcadNusx;
+  font-size: 32px;
+  padding-bottom:100px;
+}
+
+#rightText {
+  font-family: AcadNusx;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+
+
+/*footer*/
+
+.footer-container {
+  background: -webkit-gradient(linear, left top, right top, from(#132257), to(#0C2340));
+  background: -o-linear-gradient(left, #132257 0%, #0C2340 100%);
+  background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
+}
+
+.foot1 { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 6; grid-area: header; }
+.foot2 { -ms-grid-row: 2; -ms-grid-row-span: 2; -ms-grid-column: 1; grid-area: menu; }
+.foot3 { -ms-grid-row: 2; -ms-grid-row-span: 2; -ms-grid-column: 2; -ms-grid-column-span: 4; grid-area: main; }
+.foot5 { -ms-grid-row: 2; -ms-grid-row-span: 2; -ms-grid-column: 6; grid-area: footer;}
+
+
+
+.footer2-container {
+display: -ms-grid;
+display: grid;
+width: 100%;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    grid-template-areas:
+  'header header header header header header'
+  'menu main main main main footer'
+  'menu main main main main footer';
+background: -webkit-gradient(linear, left top, right top, from(#132257), to(#0C2340));
+background: -o-linear-gradient(left, #132257 0%, #0C2340 100%);
+background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
+}
+
+.header2 {
+text-align: center;
+}
+
+.socMediaFooter {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.foot2 {
+display: inline;
+width: 70%;
+}
+
+.foot5Style {
+font-size: 12px;
+text-align: right;  
+margin-right: inherit;
+margin-right: 25px;
+margin-top: 10px;
+color: #E1EBEE;
+font-family: boldText;
+}
+
+.socMediaDiv {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-pack: distribute;
+    justify-content: space-around;
+width: 100%;
+margin: auto;
+}
+
+.foot3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 30px;
+    margin-left: inherit;
+    margin-left: 13%;
+}
+
+.footerNav {
+font-family: AcadNusx;
+text-decoration: none;
+font-size: 25px;
+color: #E1EBEE;
+padding: 5px;
+}
+
+.footerNav:hover {
+background: -webkit-gradient(linear, left top, right top, from(#efd5ff), to(#515ada));
+background: -o-linear-gradient(left, #efd5ff 0%, #515ada 100%);
+background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+
+.addressDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left:37%;
+    line-height: 40px;
+}
+
+#addressStyleH {
+font-size: 30px;
+color: #E1EBEE;
+font-family: boldText;
+}
+
+#addressPStyle {
+font-size: 15px;
+color: #E1EBEE;
+font-family: lightText;
+}
+
+
+@media screen and (max-width: 600px) {
+  #textUs {
+    font-family:AcadNusx;
+    font-size: 26px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  
+  #sendUs {
+    font-family:AcadNusx;
+    font-size: 16px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  
+#nameText {
+  width: 100%;
+  padding: 15px;
+  font-family: AcadNusx;
+  font-size: 22px;
+  outline: none;
+}
+
+#emailText {
+  width: 100%;
+  padding: 15px;
+  font-family: AcadNusx;
+  font-size: 22px;
+  outline: none;
+}
+
+#smsArea {
+  width: 100%;
+  font-family: AcadNusx;
+  font-size: 22px;
+  outline: none;
+  padding: 10px;
+}
+
+#sendBut {
+  font-family: AcadNusx;
+  width: 50%;
+  font-size: 16px;
+  padding: 6px;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+  background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+.contacInfo {
+  text-align: center;
+  margin-left: 0%;
+  position: static;
+  border: 1px solid #00C9FF;
+  padding: 20px;
+}
+
+.contactText {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+#contactRight {
+  font-family: AcadNusx;
+  font-size: 26px;
+  padding-bottom:100px;
+}
+
+#rightText {
+  font-family: AcadNusx;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  #textUs {
+    font-family:AcadNusx;
+    font-size: 26px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  
+  #sendUs {
+    font-family:AcadNusx;
+    font-size: 16px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  
+#nameText {
+  width: 100%;
+  padding: 15px;
+  font-family: AcadNusx;
+  font-size: 22px;
+  outline: none;
+}
+
+#emailText {
+  width: 100%;
+  padding: 15px;
+  font-family: AcadNusx;
+  font-size: 22px;
+  outline: none;
+}
+
+#smsArea {
+  width: 100%;
+  font-family: AcadNusx;
+  font-size: 22px;
+  outline: none;
+  padding: 10px;
+}
+
+#sendBut {
+  font-family: AcadNusx;
+  width: 50%;
+  font-size: 16px;
+  padding: 6px;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+  background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+.contacInfo {
+  text-align: center;
+  margin-left: 0%;
+  position: static;
+  border: 1px solid #00C9FF;
+  padding: 20px;
+}
+
+.contactText {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+#contactRight {
+  font-family: AcadNusx;
+  font-size: 26px;
+  padding-bottom:100px;
+}
+
+#rightText {
+  font-family: AcadNusx;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+}
+

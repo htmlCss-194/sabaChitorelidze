@@ -1,0 +1,122 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GeorgianTravel</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Saba Chitorelidze">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/footer2.css">
+    <link rel="stylesheet" href="./style/logIn.css">
+    <link rel="stylesheet" href="./style/registration.css">
+    <link rel="stylesheet" href="./style/aboutUs.css">
+    <link rel="stylesheet" href="./style/transform.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header1">
+                <ul>
+                    <li><a id="navStyle" href="./index.html">მთავარი</a></li>
+                        <li class="tour">
+                        <a class="tourBt">ტურები 
+                        </a>
+                        <div class="tour-content">
+                          <a href="#">თბილისი</a>
+                          <a href="#">რეგიონები</a>
+                          <a href="#">ჯგუფური</a>
+                          <a href="#">ინდივიდუალური</a>
+                        </div>
+                        </li>
+                      <li class="hotel">
+                        <a class="hotelBt">სასტუმროები 
+                        </a>
+                        <div class="hotel-content">
+                          <a href="#">თბილისი</a>
+                          <a href="#">კახეთი</a>
+                          <a href="#">იმერეთი</a>
+                          <a href="#">აჭარა</a>
+                          <a href="#">სამეგრელო</a>
+                          <a href="#">სხვა რეგიონები</a>
+                    </li> 
+                    <li><a id="navStyle" href="./aboutUs.html">ჩვენ შესახებ</a></li>
+                    <li><a id="navStyle" href="./contac.html">კონტაქტი</a></li> 
+                </ul>
+            </div>
+
+            <div class="header2"><h1 id="titleStyle">Georgian<span>Travel</span></h1>
+            </div>
+
+            <div class="header3"> 
+                
+                <select name="language" id="lang">
+                    <option value="ge">GE</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+          </div>
+    </header>
+
+   <main>
+    <div class="reg-container">
+        <div class="registrationItem1">
+            <!-- <form id="form" action="#"> -->
+                <label class="regText" for="fname">სახელი:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label class="regText" for="lname">გვარი:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label class="regText" for="phoneNumber">ტელეფონის ნომერი:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber"><br><br>
+                <label class="regText" for="personalNum">პირადი ნომერი:</label>
+                <input type="text" id="personalNum" name="personalNum"><br><br>
+                <label class="regText" for="email"> ელფოსტა:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label class="regText" for="password">შეიყვანეთ პაროლი:</label>
+                <input type="password" name="password" id="password"><br><br>
+                <label for="birthday" class="regText">დაბადების თარიღი:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <p class="regText">სქესი</p><br><br>
+                <input type="radio" name="gender" value="male">  მამრობითი
+                <input type="radio" name="gender" value="female"> მდედრობითი
+                <br><br>
+                <input type="submit" value="რეგისტრაცია" id="reg" onclick="handleLogin()">
+              <!-- </form> -->
+              <br>
+        </div>
+    </div>
+
+   </main>
+
+    <footer>
+      <div class="footer2-container">
+        <div class="foot1">
+            <div class="header2"><h1 id="titleStyle2">GeorgianTravel</h1>
+            </div>
+        </div>
+        <div class="foot3">
+            <a class="footerNav" href="#">ჩვენ შესახებ</a>
+            <a class="footerNav" href="#">ტურები</a>
+            <a class="footerNav" href="#">კონტაქტი</a>
+        </div>
+        <div class="foot2">
+            <div class="socMediaDiv">
+            <img class="socMediaFooter" src="./Images/facebook.png" alt="facebook">
+            <img class="socMediaFooter" src="./Images/instagram.png" alt="instagram">
+            <img class="socMediaFooter" src="./Images/youtube.png" alt="youtube">
+            </div>
+        </div>
+        <div class="foot5">
+            <div class="addressDiv">
+                <h3 id="addressStyleH">Address</h3>
+                <p id="addressPStyle">Rustaveli avenue #37</p>
+                <h3 id="addressStyleH">Contact</h3>
+                <p id="addressPStyle">+995 032 14 13 12</p>
+            </div>
+            <p class="foot5Style">© Georgian National Tourism Administration</p>
+            </div>
+          </div>
+      </footer>
+      <script src="./scripts/registration.js" type="text/javascript"></script>
+</body>
+</html>

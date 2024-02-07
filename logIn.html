@@ -1,0 +1,119 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GeorgianTravel</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Saba Chitorelidze">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/footer2.css">
+    <link rel="stylesheet" href="./style/logIn.css">
+    <link rel="stylesheet" href="./style/aboutUs.css">
+    <link rel="stylesheet" href="./style/transform.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header1">
+                <ul>
+                    <li><a id="navStyle" href="./index.html">მთავარი</a></li>
+                        <li class="tour">
+                        <a class="tourBt">ტურები 
+                        </a>
+                        <div class="tour-content">
+                          <a href="#">თბილისი</a>
+                          <a href="#">რეგიონები</a>
+                          <a href="#">ჯგუფური</a>
+                          <a href="#">ინდივიდუალური</a>
+                        </div>
+                        </li>
+                      <li class="hotel">
+                        <a class="hotelBt">სასტუმროები 
+                        </a>
+                        <div class="hotel-content">
+                          <a href="#">თბილისი</a>
+                          <a href="#">კახეთი</a>
+                          <a href="#">იმერეთი</a>
+                          <a href="#">აჭარა</a>
+                          <a href="#">სამეგრელო</a>
+                          <a href="#">სხვა რეგიონები</a>
+                    </li> 
+                    <li><a id="navStyle" href="./aboutUs.html">ჩვენ შესახებ</a></li>
+                    <li><a id="navStyle" href="./contac.html">კონტაქტი</a></li> 
+                </ul>
+            </div>
+
+            <div class="header2"><h1 id="titleStyle">Georgian<span>Travel</span></h1>
+            </div>
+
+            <div class="header3"> 
+                <select name="language" id="lang">
+                    <option value="ge">GE</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+          </div>
+    </header>
+
+   <main>
+
+    <div class="login-container">
+        <div class="loginMain1">
+            <form action="">
+                <input type="text" id="log" name="fname" placeholder="ელფოსტა | ტელეფონის ნომერი"><br><br><br>
+                <input type="password" id="pass" name="lname" placeholder="პაროლი"><br><br><br>
+
+                <div class="loginMain2">
+                    <div class="remember">
+                    <input type="checkbox" id="checkbox"> <p>დამახსოვრება</p>
+                    </div>
+                    <input type="submit" id="passRes" value="დაგავიწყდა პაროლი?">
+                </div>
+                <br><br>
+                <div class="loginMain3">
+                    <input type="submit" id="logIn2" value="შესვლა">
+                </div>
+                <br> <p>ან</p>
+                <br>
+              </form> 
+              <form action="./registraion.html">
+                <div class="loginMain4">
+                    <input type="submit" id="registration" value="რეგისტრაცია">
+                </div>
+            </form>
+        </div>
+      </div> 
+
+   </main>
+
+    <footer>
+        <div class="footer2-container">
+            <div class="foot1">
+                <div class="header2"><h1 id="titleStyle2">GeorgianTravel</h1>
+                </div>
+            </div>
+            <div class="foot3">
+                <a class="footerNav" href="#">ჩვენ შესახებ</a>
+                <a class="footerNav" href="#">ტურები</a>
+                <a class="footerNav" href="#">კონტაქტი</a>
+            </div>
+            <div class="foot2">
+                <div class="socMediaDiv">
+                <img class="socMediaFooter" src="./Images/facebook.png" alt="facebook">
+                <img class="socMediaFooter" src="./Images/instagram.png" alt="instagram">
+                <img class="socMediaFooter" src="./Images/youtube.png" alt="youtube">
+                </div>
+            </div>
+            <div class="foot5">
+                <div class="addressDiv">
+                    <h3 id="addressStyleH">Address</h3>
+                    <p id="addressPStyle">Rustaveli avenue #37</p>
+                    <h3 id="addressStyleH">Contact</h3>
+                    <p id="addressPStyle">+995 032 14 13 12</p>
+                </div>
+                <p class="foot5Style">© Georgian National Tourism Administration</p>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>

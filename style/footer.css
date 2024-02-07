@@ -1,42 +1,71 @@
+
 @font-face {
-    font-family: lightText;
-    src: url("/Fonts/OpenSans-Light.ttf");
+  font-family: lightText;
+  src: url("/Fonts/OpenSans-Light.ttf");
 
 }
 @font-face {
-    font-family: mediumText;
-    src: url("/Fonts/OpenSans_SemiCondensed-SemiBold.ttf");
+  font-family: mediumText;
+  src: url("/Fonts/OpenSans_SemiCondensed-SemiBold.ttf");
 }
 
 @font-face {
-    font-family: boldText;
-    src: url("/Fonts/OpenSans-Bold.ttf");
+  font-family: boldText;
+  src: url("/Fonts/OpenSans-Bold.ttf");
 }
+
+@font-face {
+font-family: AcadNusx;
+src: url("/Fonts/acadnusx.ttf");
+}
+
+@font-face {
+font-family: AcadNusx;
+src: url("/Fonts/BPG_Algeti_2018.ttf");
+}
+
+
+:root {
+--2: #E1EBEE;
+}
+
 
 .runningLine {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 25px;
-    background-color: #f5f5f5 ;
-    color: var(--1st);
-    font-family: mediumText;
-    font-size: 28px;
-  }
-  
-  .runningLine_content {
-    width: 100%;
-    transform: translateX(-200%); 
-    animation: move 20s linear infinite; 
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  background: -webkit-gradient(linear, left top, right top, from(#132257), to(#0C2340));
+  background: -o-linear-gradient(left, #132257 0%, #0C2340 100%);
+  background: linear-gradient(90deg, #132257 0%, #0C2340 100%);
+  bottom: 0;
+  width: 100%;
+  padding: 25px;
+  color: var(--1st);
+  font-size: 28px;
+  font-family: AcadNusx;
+}
 
-  @keyframes move {
-    to { transform: translateX(200%); }
-  }
+.runningLine_content {
+  width: 100%;
+  -webkit-transform: translateX(-200%);
+      -ms-transform: translateX(-200%);
+          transform: translateX(-200%); 
+  -webkit-animation: move 20s linear infinite; 
+          animation: move 20s linear infinite; 
+  color: var(--2);
+}
 
-  @media screen and (max-width: 600px) {
-    .runningLine {
-      font-size: 10px;
-    }
+@-webkit-keyframes move {
+  to { -webkit-transform: translateX(200%); transform: translateX(200%); }
+}
+
+@keyframes move {
+  to { -webkit-transform: translateX(200%); transform: translateX(200%); }
+}
+
+@media screen and (max-width: 600px) {
+  .runningLine {
+    font-size: 10px;
   }
+}
